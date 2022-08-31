@@ -25,8 +25,8 @@
         android:padding="5dp"
         android:textColor="@color/black"
         android:textSize="25dp"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="330dp" />
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="332dp" />
 
     <EditText
         android:id="@+id/et_password"
@@ -38,7 +38,7 @@
         android:padding="5dp"
         android:textColor="@color/black"
         android:textSize="25dp"
-        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteX="28dp"
         tools:layout_editor_absoluteY="440dp" />
 
     <Button
