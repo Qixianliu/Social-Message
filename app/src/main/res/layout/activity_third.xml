@@ -6,20 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".ThirdActivity">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="272dp"
-        android:fontFamily="@font/open_sans_regular"
-        android:text="Recent Contacts"
-        android:textColor="@color/brown"
-        android:textSize="20dp"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="411dp"
+        android:layout_height="84dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/menubar" />
 
-        app:layout_constraintHorizontal_bias="0.16"
-        app:layout_constraintStart_toStartOf="parent" />
+    <ImageButton
+        android:id="@+id/imageButton71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="#00000000"
+        android:contentDescription="Button for notifications"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/iconnotification" />
 
     <TextView
         android:id="@+id/textView7"
@@ -58,40 +66,73 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-            <ImageButton
-                android:id="@+id/imageButton7"
-                android:layout_width="307dp"
-                android:layout_height="174dp"
-                android:layout_marginTop="136dp"
-                android:background="F000000"
-                android:contentDescription="Button for non-urgent services"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/nonurgent" />
-
-            <ImageButton
-                android:id="@+id/imageButton8"
-                android:layout_width="307dp"
-                android:layout_height="174dp"
-                android:layout_marginTop="32dp"
-                android:background="F000000"
-                android:contentDescription="Button for urgent services"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton7"
-                app:srcCompat="@drawable/urgent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="388dp"
-        android:layout_height="332dp"
-        android:layout_marginTop="8dp"
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="307dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="136dp"
+        android:background="#00000000"
+        android:contentDescription="Button for non-urgent services"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/user" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nonurgent" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="307dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="32dp"
+        android:background="#00000000"
+        android:contentDescription="Button for urgent services"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        app:srcCompat="@drawable/urgent" />
+
+    <ImageButton
+        android:id="@+id/imageButton73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:contentDescription="Button for home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/homebutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="#00000000"
+        android:contentDescription="Button for location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton75"
+        app:srcCompat="@drawable/locationbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="#00000000"
+        android:contentDescription="Button for contact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton76"
+        app:srcCompat="@drawable/contactbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="#00000000"
+        android:contentDescription="Button for profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/profilebutton" />
 
 
     <!-- Help me -->

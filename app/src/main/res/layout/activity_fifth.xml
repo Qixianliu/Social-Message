@@ -7,12 +7,22 @@
     tools:context=".FifthActivity">
 
 
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="411dp"
+        android:layout_height="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/menubar" />
+
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:background="F000000"
+        android:background="#00000000"
         android:contentDescription="Button for go back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:background="F000000"
+        android:background="#00000000"
         android:contentDescription="Button for notifications"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,12 +58,98 @@
         android:layout_width="254dp"
         android:layout_height="61dp"
         android:layout_marginTop="132dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton45"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="#00000000"
         app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Button for lost"
+        app:layout_constraintVertical_bias="0.492"
         app:srcCompat="@drawable/imlost" />
+
+    <ImageButton
+        android:id="@+id/imageButton41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:contentDescription="Button for home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton42"
+        app:layout_constraintStart_toStartOf="@+id/imageView31"
+        app:srcCompat="@drawable/homebutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="#00000000"
+        android:contentDescription="Button for location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton43"
+        app:srcCompat="@drawable/locationbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="#00000000"
+        android:contentDescription="Button for contact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton44"
+        app:srcCompat="@drawable/contactbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="#00000000"
+        android:contentDescription="Button for profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/profilebutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton45"
+        android:layout_width="254dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="36dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton46"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        android:contentDescription="Button for covid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/covidbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton46"
+        android:layout_width="254dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="36dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton55"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        android:contentDescription="Button for unwell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/unwellbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton55"
+        android:layout_width="254dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="128dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageView31"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="Button for others"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/otherbutton" />
 
     <!-- Help me -->
 

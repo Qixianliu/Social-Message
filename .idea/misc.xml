@@ -8,13 +8,26 @@
         <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/drawable/line_1.xml" value="0.3075" />
         <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/drawable/mybutton.xml" value="0.3675" />
         <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.10686095931997572" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_car_breakdown.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_chat.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_child_minding.xml" value="0.33" />
-        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_fifth.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_contact.xml" value="0.33" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_covid19.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_doctor.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_fifth.xml" value="0.33" />
         <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_fourth.xml" value="0.33" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_gardening.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_second.xml" value="0.33" />
-        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_third.xml" value="0.541727672035139" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_lost.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_messages.xml" value="0.33" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_new_contact.xml" value="0.25" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_other.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_profile.xml" value="0.33" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_second.xml" value="0.25" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_third.xml" value="0.25" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_unwell.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/zizhe/AndroidStudioProjects/Help/app/src/main/res/layout/activity_walkthedog.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
