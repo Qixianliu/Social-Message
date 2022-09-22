@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.help_me">
+    package="com.example.kallz2u">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -16,7 +16,7 @@
         android:theme="@style/Theme.Help_Me"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.kallz2u.activites.SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,8 +24,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activites.ChildMindingActivity"/>
+        <activity android:name=".activites.Activity1"/>
+        <activity android:name=".activites.ThirdActivity"/>
+        <activity android:name=".activites.FifthActivity"/>
         <service
-            android:name=".firebase.MessagingService"
+            android:name="com.example.kallz2u.firebase.MessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
