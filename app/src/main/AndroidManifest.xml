@@ -19,7 +19,7 @@
             android:name=".CreateGroupActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.kallz2u.activites.SignInActivity"
+            android:name=".SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
