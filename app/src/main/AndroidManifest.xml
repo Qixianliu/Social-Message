@@ -16,13 +16,8 @@
         android:theme="@style/Theme.Help_Me"
         tools:targetApi="31">
         <activity
-            android:name=".DashBoardActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".activites.DashBoardActivity"
+            android:exported="false">
         </activity>
         <activity
             android:name=".activites.CreateGroupActivity"

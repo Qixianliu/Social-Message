@@ -6,36 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".activites.DashBoardActivity">
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Helping you connect to your community"
-        android:textColor="@color/peach"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:layout_marginHorizontal="20dp"
-        android:background="@color/lightpeach"
-        android:contentDescription="Button for urgent services"
-        app:srcCompat="@drawable/urgent"
-        />
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
-        android:background="@color/lightpeach"
-        android:layout_marginHorizontal="20dp"
-        android:contentDescription="Button for non-urgent services"
-        app:srcCompat="@drawable/nonurgent" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:background="@color/lightpeach"
@@ -47,5 +17,11 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_nav_menu"/>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigationView"/>
 
 </RelativeLayout>
