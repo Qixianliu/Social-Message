@@ -144,7 +144,7 @@ public class SignInActivity extends AppCompatActivity {
                             PreferencesUtils.putString(SignInActivity.this,"name",binding.fieldEmail.getText().toString().trim());
                             PreferencesUtils.putString(SignInActivity.this,"pwd",binding.fieldPassword.getText().toString().trim());
 //                            onAuthSuccess(task.getResult().getUser());
-                            startActivity(new Intent(SignInActivity.this,Activity1.class));
+                            startActivity(new Intent(SignInActivity.this,DashBoardActivity.class));
                         } else {
                             Toast.makeText(SignInActivity.this, "Sign In Failed",
                                     Toast.LENGTH_SHORT).show();

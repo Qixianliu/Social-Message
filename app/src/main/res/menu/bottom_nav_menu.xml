@@ -3,18 +3,18 @@
     <item
         android:id="@+id/MenuHome"
         android:title="Home"
-        android:icon="@drawable/carbutton"
+        android:icon="@drawable/homebutton"
         />
     <item
         android:id="@+id/MenuGroup"
         android:title="Group"
-        android:icon="@drawable/iconback"/>
+        android:icon="@drawable/groupicon"/>
     <item
         android:id="@+id/MenuContact"
         android:title="Contact"
-        android:icon="@drawable/chat"/>
+        android:icon="@drawable/contactbutton"/>
     <item
         android:id="@+id/MenuProfile"
         android:title="Profile"
-        android:icon="@drawable/iconback"/>
+        android:icon="@drawable/profilebutton"/>
 </menu>

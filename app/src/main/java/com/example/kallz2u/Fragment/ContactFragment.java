@@ -1,14 +1,20 @@
 package com.example.kallz2u.Fragment;
 
+import android.content.ContentResolver;
+import android.database.Cursor;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.kallz2u.Permissions.Permissions;
 import com.example.kallz2u.R;
+import com.example.kallz2u.databinding.FragmentContactBinding;
+import com.google.firebase.database.DatabaseReference;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +22,10 @@ import com.example.kallz2u.R;
  * create an instance of this fragment.
  */
 public class ContactFragment extends Fragment {
+
+    private FragmentContactBinding binding;
+    private DatabaseReference databaseReference;
+    private Permissions permissions;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,6 +71,31 @@ public class ContactFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_contact, container, false);
+        binding = FragmentContactBinding.inflate(inflater,container,false);
+        View view = binding.getRoot();
+        permissions= new Permissions();
+        return view;
+    }
+
+    private void getUserContact(){
+        if(permissions.isContactOk(getContext())){
+            String[] projection = new String[]{
+                    /*ContactsContract.Contacts.DISPLAY_NAME,
+                    ContactsContract.CommonDataKinds.Email.*/
+            };
+
+            ContentResolver cr = getActivity().getContentResolver();
+            Cursor cursor=cr.query(ContactsContract.CommonDataKinds.Email.CONTENT_URI,projection,null,null,null);
+            if(cursor != null){
+                while(cursor.moveToFirst()){
+                    /*String name=cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Email.DISPLAY_NAME));
+                    String email=cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Email.DISPLAY_EMAIL);*/
+
+                }
+            }
+        }else{
+
+        }
+
     }
 }

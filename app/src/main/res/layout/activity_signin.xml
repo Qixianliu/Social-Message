@@ -20,12 +20,12 @@
         android:id="@+id/icon"
         android:layout_width="224dp"
         android:layout_height="169dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image1" />
+        app:srcCompat="@drawable/k2uv2" />
 
     <TextView
         android:id="@+id/textView"
@@ -107,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/open_sans_bold"
-        android:text="Pleez"
+        android:text="Kallz"
         android:textColor="@color/peach"
         android:textSize="46dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
@@ -120,7 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/open_sans_regular"
-        android:text="Help"
+        android:text="2U"
         android:textSize="50dp"
         android:textColor="@color/lightpeach"
         app:layout_constraintStart_toEndOf="@+id/textView2"
