@@ -1,14 +1,304 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.GroupFragment">
+    tools:context=".Fragment.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageButton
+        android:id="@+id/btnAddGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:contentDescription="Button for notifications"
+        app:srcCompat="@drawable/addButton" />
+
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="151dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/groupstring" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/btnAddGroup"
+        android:id="@+id/PersonalNetworkContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
 
-</FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/PersonalNetworkGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:text="Personal network"
+
+                android:textColor="@color/brown"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PersonalNetworkGroup"
+                android:textColor="@color/lightpeach"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Moe, Jason...."
+                android:layout_alignStart="@+id/PersonalNetworkGroup"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/btnEditGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/editbutton" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/PersonalNetworkContainer"
+        android:id="@+id/NGOsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/NGOsGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:text="NGOs"
+
+                android:textColor="@color/brown"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NGOsGroup"
+                android:textColor="@color/lightpeach"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Moe, Jason...."
+                android:layout_alignStart="@+id/NGOsGroup"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/btnEditGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/editbutton" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/NGOsContainer"
+        android:id="@+id/ServiceGroupContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/ServiceGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:text="Service Group"
+
+                android:textColor="@color/brown"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ServiceGroup"
+                android:textColor="@color/lightpeach"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Moe, Jason...."
+                android:layout_alignStart="@+id/ServiceGroup"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/btnEditGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/editbutton" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/ServiceGroupContainer"
+        android:id="@+id/SupportContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/SupportGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:text="Support Group"
+
+                android:textColor="@color/brown"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SupportGroup"
+                android:textColor="@color/lightpeach"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Moe, Jason...."
+                android:layout_alignStart="@+id/SupportGroup"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/btnEditGroup4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/editbutton" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/SupportContainer"
+        android:id="@+id/ProfessionalContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/ProfessionalGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:text="Professional"
+
+                android:textColor="@color/brown"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProfessionalGroup"
+                android:textColor="@color/lightpeach"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Moe, Jason...."
+                android:layout_alignStart="@+id/ProfessionalGroup"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/btnEditGroup5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/editbutton" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+</RelativeLayout>
