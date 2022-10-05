@@ -148,18 +148,6 @@
         app:srcCompat="@drawable/pet" />
 
     <ImageButton
-        android:id="@+id/imageButton50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:background="#00000000
-"
-        android:contentDescription="Button for location"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton51"
-        app:srcCompat="@drawable/locationbutton" />
-
-    <ImageButton
         android:id="@+id/imageButton51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -180,6 +168,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView33"
         app:srcCompat="@drawable/profilebutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="#00000000"
+        android:contentDescription="Button for group"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton51"
+        app:srcCompat="@drawable/groupicon" />
 
     <!-- Help me -->
 

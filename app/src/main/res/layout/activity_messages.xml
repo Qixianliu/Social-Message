@@ -87,20 +87,9 @@
         android:background="#00000000"
         android:contentDescription="Button for home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton80"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton74"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/homebutton" />
-
-    <ImageButton
-        android:id="@+id/imageButton80"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:background="#00000000"
-        android:contentDescription="Button for location"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton82"
-        app:srcCompat="@drawable/locationbutton" />
 
     <ImageButton
         android:id="@+id/imageButton81"
@@ -181,5 +170,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/acceptbuttonv2" />
+
+    <ImageButton
+        android:id="@+id/imageButton74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:background="#00000000"
+        android:contentDescription="Button for group"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton82"
+        app:srcCompat="@drawable/groupicon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

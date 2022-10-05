@@ -14,6 +14,15 @@
         android:theme="@style/Theme.Help"
         tools:targetApi="31">
         <activity
+            android:name=".SentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GroupActivity"
+            android:exported="false" />
+        <activity
             android:name=".NewContactActivity"
             android:exported="false" />
         <activity

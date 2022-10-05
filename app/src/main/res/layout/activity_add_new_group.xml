@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewGroupActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="#00000000"
+        android:contentDescription="Button for notifications"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/iconnotification" />
+
+    <ImageButton
+        android:id="@+id/imageButton89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="#00000000"
+        android:contentDescription="Button for go back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/iconback" />
+
+    <ImageView
+        android:id="@+id/imageView67"
+        android:layout_width="151dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton95"
+        app:layout_constraintStart_toEndOf="@+id/imageButton89"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/addnewstring"
+        android:contentDescription="add new" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="345dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="group name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView68" />
+
+    <ImageView
+        android:id="@+id/imageView68"
+        android:layout_width="100dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/groupnamestring" />
+
+    <ImageView
+        android:id="@+id/imageView69"
+        android:layout_width="100dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="252dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/grouptype" />
+
+    <ImageButton
+        android:id="@+id/imageButton97"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#00000000"
+        android:contentDescription="Button for personal network"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton99"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton98"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/personalnetworkbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00000000"
+        android:contentDescription="Button for ORGs"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/orgsbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#00000000"
+        android:contentDescription="Button for service groups"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton101"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton100"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/servicegroupsbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00000000"
+        android:contentDescription="Button for support groups"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton102"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/supportgroupsbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="248dp"
+        android:background="#00000000"
+        android:contentDescription="Button for professional"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton102"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/professionalbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton102"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="248dp"
+        android:background="#00000000"
+        android:contentDescription="Button for customize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/customizebutton" />
+
+    <ImageView
+        android:id="@+id/imageView70"
+        android:layout_width="100dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="536dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/addcontactstring" />
+
+    <Spinner
+        android:id="@+id/spinner11"
+        android:layout_width="353dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="spinner for adding contact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView70" />
+
+    <ImageButton
+        android:id="@+id/imageButton103"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:background="#00000000"
+        android:contentDescription="Button for finish"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/finishbutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
