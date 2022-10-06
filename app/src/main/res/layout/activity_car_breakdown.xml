@@ -6,10 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".CarBreakdownActivity">
 
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/quickstring" />
+
     <EditText
         android:id="@+id/editTextTime6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:contentDescription="Selector for time"
         android:ems="10"
@@ -18,39 +30,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView23"
-        app:layout_constraintTop_toBottomOf="@+id/calendarView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton111"
         tools:ignore="EditableContentDescCheck" />
 
     <ImageView
         android:id="@+id/imageView23"
         android:layout_width="170dp"
         android:layout_height="21dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calendarView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton111"
         app:srcCompat="@drawable/selecttimestring" />
-
-    <CalendarView
-        android:id="@+id/calendarView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
-
-    <ImageView
-        android:id="@+id/imageView22"
-        android:layout_width="135dp"
-        android:layout_height="21dp"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner3"
-        app:srcCompat="@drawable/selectdatestring" />
 
     <ImageView
         android:id="@+id/imageView20"
@@ -135,4 +126,64 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.566"
         app:srcCompat="@drawable/carbreakdownstring" />
+
+    <ImageButton
+        android:id="@+id/imageButton110"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="#00000000"
+        android:contentDescription="Button for 10min"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton111"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22"
+        app:srcCompat="@drawable/tenminbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="#00000000"
+        android:contentDescription="Button for 1hr"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton115"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22"
+        app:srcCompat="@drawable/onehrbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton115"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:background="#00000000"
+        android:contentDescription="Button for 3hr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22"
+        app:srcCompat="@drawable/threehrbutton" />
+
+    <ImageView
+        android:id="@+id/imageView75"
+        android:layout_width="185dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTime6"
+        app:srcCompat="@drawable/leavestring" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="370dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView75" />
 </androidx.constraintlayout.widget.ConstraintLayout>

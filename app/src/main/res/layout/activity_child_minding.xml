@@ -55,30 +55,10 @@
         app:srcCompat="@drawable/recentcontactstring" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="135dp"
-        android:layout_height="21dp"
-        app:layout_constraintBottom_toTopOf="@+id/calendarView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/selectdatestring" />
-
-    <CalendarView
-        android:id="@+id/calendarView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="220dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
         android:id="@+id/imageView10"
         android:layout_width="170dp"
         android:layout_height="21dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="236dp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton3"
         app:layout_constraintEnd_toStartOf="@+id/editTextTime"
         app:layout_constraintHorizontal_bias="0.0"
@@ -89,8 +69,8 @@
         android:id="@+id/editTextTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="220dp"
         android:contentDescription="Selector for time"
         android:ems="10"
         android:inputType="time"
@@ -129,12 +109,83 @@
         android:id="@+id/spinner2"
         android:layout_width="340dp"
         android:layout_height="48dp"
-        android:hint="Email"
         android:contentDescription="dropdown for contact list"
-        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        android:hint="Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/quickstring" />
+
+    <ImageButton
+        android:id="@+id/imageButton112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#00000000"
+        android:contentDescription="Button for 10-30min"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton113"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/tenminbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="#00000000"
+        android:contentDescription="Button for 1-2hr"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton114"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/onehrbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:background="#00000000"
+        android:contentDescription="Button for 3-6hr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/threehrbutton" />
+
+    <ImageView
+        android:id="@+id/imageView73"
+        android:layout_width="185dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/leavestring" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="368dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView73" />
 
     <!-- Help me -->
 
