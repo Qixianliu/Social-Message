@@ -54,7 +54,7 @@
     <!-- Help me -->
 
     <EditText
-        android:id="@+id/fieldPassword"
+        android:id="@+id/inputPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -88,7 +88,7 @@
 
 
     <EditText
-        android:id="@+id/fieldEmail"
+        android:id="@+id/inputEmail"
         android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginStart="32dp"
@@ -142,7 +142,7 @@
         app:layout_constraintVertical_bias="0.963" />
 
     <EditText
-        android:id="@+id/fieldName"
+        android:id="@+id/inputName"
         android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginStart="32dp"

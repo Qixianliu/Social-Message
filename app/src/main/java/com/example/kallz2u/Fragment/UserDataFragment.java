@@ -73,14 +73,14 @@ public class UserDataFragment extends Fragment {
         }
     }
 
-    @Override
+   /* @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding=FragmentUserDataBinding.inflate(inflater,container,false);
         View view=binding.btnDataDone.getRootView();
 
         return view;
-    }
+    }*/
 
     private boolean isStoragePermissionOK(){
         if(ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.READ_EXTERNAL_STORAGE)== PackageManager.PERMISSION_GRANTED){
@@ -111,7 +111,7 @@ public class UserDataFragment extends Fragment {
         }
     }*/
 
-    private boolean checkName() {
+    /*private boolean checkName() {
         name = binding.edtUserName.getText().toString().trim();
         if (name.isEmpty()) {
             binding.edtUserName.setError("Filed is required");
@@ -131,5 +131,5 @@ public class UserDataFragment extends Fragment {
             binding.edtUserStatus.setError(null);
             return true;
         }
-    }
+    }*/
 }
