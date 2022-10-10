@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 
 import android.provider.ContactsContract;
+import android.service.autofill.UserData;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,8 @@ import com.example.kallz2u.Permissions.Permissions;
 import com.example.kallz2u.R;
 import com.example.kallz2u.databinding.FragmentContactBinding;
 import com.google.firebase.database.DatabaseReference;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -80,20 +83,24 @@ public class ContactFragment extends Fragment {
     private void getUserContact(){
         if(permissions.isContactOk(getContext())){
             String[] projection = new String[]{
-                    /*ContactsContract.Contacts.DISPLAY_NAME,
-                    ContactsContract.CommonDataKinds.Email.*/
+                    ContactsContract.Contacts.DISPLAY_NAME,
             };
 
             ContentResolver cr = getActivity().getContentResolver();
             Cursor cursor=cr.query(ContactsContract.CommonDataKinds.Email.CONTENT_URI,projection,null,null,null);
-            if(cursor != null){
+            /*if(cursor != null){
                 while(cursor.moveToFirst()){
-                    /*String name=cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Email.DISPLAY_NAME));
-                    String email=cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Email.DISPLAY_EMAIL);*/
+                   String name=cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
+                   String number=cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+                   number = number.replace("\\s","");
+                   String num = String.valueOf(number.charAt(0));
 
+                   if (num.equals("0")){
+                       number = number.replace("(?:0)+","+61");
+                    }
                 }
-            }
-        }else{
+            }*/
+        }else permissions.requestContact(getActivity());{
 
         }
 
