@@ -1,5 +1,6 @@
 package com.example.kallz2u.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,8 +8,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import com.example.kallz2u.R;
+import com.example.kallz2u.activites.FifthActivity;
+import com.example.kallz2u.activites.FourthActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,10 +25,12 @@ public class HomeFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private View view;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private ImageButton imageButton8,imageButton7;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -61,6 +67,21 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        view = inflater.inflate(R.layout.fragment_home, container, false);
+        imageButton7 = view.findViewById(R.id.imageButton7);
+        imageButton8 = view.findViewById(R.id.imageButton8);
+        imageButton7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), FourthActivity.class));
+            }
+        });
+        imageButton8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), FifthActivity.class));
+            }
+        });
+        return view;
     }
 }

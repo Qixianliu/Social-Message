@@ -23,6 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.gson.Gson;
 
 public class SignInActivity extends AppCompatActivity {
     private ActivitySigninBinding binding;
@@ -114,7 +115,7 @@ public class SignInActivity extends AppCompatActivity {
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        Log.d("=======", "createUser:onComplete:" + task.toString());
+                        Log.d("=========", "createUser:onComplete:" + new Gson().toJson(task));
                         Log.d("=======", "createUser:onComplete:" + task.isSuccessful());
                         binding.progressBar.setVisibility(View.GONE);
                         if (task.isSuccessful()) {
@@ -138,7 +139,7 @@ public class SignInActivity extends AppCompatActivity {
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        Log.d("=========", "signIn:onComplete:" + task.isSuccessful());
+                        Log.d("=========", "signIn:onComplete:" + new Gson().toJson(task));
                         binding.progressBar.setVisibility(View.GONE);
                         if (task.isSuccessful()) {
                             PreferencesUtils.putString(SignInActivity.this,"name",binding.fieldEmail.getText().toString().trim());
