@@ -76,6 +76,7 @@ public class SignInActivity extends AppCompatActivity {
                 binding.fieldPassword.setText(PreferencesUtils.getString(SignInActivity.this,"pwd"));
             }
         }
+        //check box
         binding.checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {

@@ -53,7 +53,7 @@ public class UsersAdapter extends  RecyclerView.Adapter<UsersAdapter.UserViewHol
 
         void setUserData(User user){
             binding.txtContactName.setText(user.username);
-            binding.txtContactStatus.setText(user.email);
+            binding.txtContactEmail.setText(user.email);
             //binding.imageProfile.setImageBitmap(getUserImage(user.image));
         }
     }

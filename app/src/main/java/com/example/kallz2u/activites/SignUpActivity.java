@@ -1,56 +1,55 @@
-//package com.example.kallz2u.activites;
-//
-//import android.content.Intent;
-//import android.graphics.Bitmap;
-//import android.graphics.BitmapFactory;
-//import android.net.Uri;
-//import android.os.Bundle;
-//import android.provider.MediaStore;
-//import android.util.Base64;
-//import android.util.Log;
-//import android.widget.Toast;
-//
-//import androidx.activity.result.ActivityResultLauncher;
-//import androidx.activity.result.contract.ActivityResultContracts;
-//import androidx.appcompat.app.AppCompatActivity;
-//
-//import com.example.kallz2u.databinding.ActivitySignupBinding;
-//import com.example.kallz2u.utilities.Constants;
-//import com.example.kallz2u.utilities.PreferenceManager;
-//import com.google.firebase.firestore.FirebaseFirestore;
-//
-//import java.io.ByteArrayOutputStream;
-//import java.io.FileNotFoundException;
-//import java.io.InputStream;
-//import java.util.HashMap;
-//
-//public class SignUpActivity extends AppCompatActivity {
-//
-//    private ActivitySignupBinding binding;
+package com.example.kallz2u.activites;
+
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Bundle;
+import android.provider.MediaStore;
+import android.util.Base64;
+import android.util.Log;
+import android.widget.Toast;
+
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.kallz2u.databinding.ActivitySignUpBinding;
+import com.example.kallz2u.utilities.Constants;
+import com.example.kallz2u.utilities.PreferenceManager;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.util.HashMap;
+
+public class SignUpActivity extends AppCompatActivity {
+
+    private ActivitySignUpBinding binding;
 //    private PreferenceManager preferenceManager;
 //    private String encodedImage;
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        binding = ActivitySignupBinding.inflate(getLayoutInflater());
-//        setContentView(binding.getRoot());
-//        preferenceManager = new PreferenceManager(getApplicationContext());
-//        setListeners();
-//    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = ActivitySignUpBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        setListeners();
+    }
 //
-//    private void setListeners() {
-////        binding.imageView2.setOnClickListener(v -> onBackPressed());
-//        binding.button.setOnClickListener(v ->{
-//            if(isValidSignUpDetails()){
-//                signUp();
-//            }
-//        });
-//        binding.imageView2.setOnClickListener(v ->{
-//            Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-//            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-//            pickImage.launch(intent);
-//        });
-//    }
+    private void setListeners() {
+        binding.buttonToSignIn.setOnClickListener(v -> onBackPressed());
+    }
+        /*binding.button.setOnClickListener(v ->{
+            if(isValidSignUpDetails()){
+                signUp();
+            }
+        });
+        binding.imageView2.setOnClickListener(v ->{
+            Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);     intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            pickImage.launch(intent);
+        });*/
+
 //
 //
 //    private void showToast(String message){
@@ -125,4 +124,4 @@
 //            }
 //     }
 //
-//}
+}
