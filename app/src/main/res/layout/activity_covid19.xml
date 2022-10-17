@@ -4,18 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activites.COVID19Activity">
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="230dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="180dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/quickstring" />
+    tools:context=".COVID19Activity">
 
     <ImageButton
         android:id="@+id/imageButton62"
@@ -27,14 +16,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.96"
+        app:layout_constraintVertical_bias="0.817"
         app:srcCompat="@drawable/sendbutton" />
 
     <ImageButton
         android:id="@+id/imageButton61"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="592dp"
+        android:layout_marginTop="484dp"
         android:background="#00000000"
         android:contentDescription="Button for alert"
 
@@ -43,37 +32,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/alertbutton" />
 
-    <EditText
-        android:id="@+id/editTextTime9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="24dp"
-        android:contentDescription="Selector for time"
-        android:ems="10"
-        android:inputType="time"
-        android:minHeight="48dp"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView43"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton119"
-        tools:ignore="EditableContentDescCheck" />
-
-    <ImageView
-        android:id="@+id/imageView43"
-        android:layout_width="170dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton119"
-        app:srcCompat="@drawable/selecttimestring" />
-
     <Spinner
         android:id="@+id/spinner8"
         android:layout_width="340dp"
         android:layout_height="48dp"
+        android:layout_marginTop="28dp"
         android:contentDescription="dropdown for contact list"
         android:hint="Email"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,6 +48,7 @@
         android:id="@+id/imageView38"
         android:layout_width="194dp"
         android:layout_height="21dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:background="#00000000"
+        android:background="F000000"
         android:contentDescription="Button for notifications"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:background="#00000000"
+        android:background="F000000"
         android:contentDescription="Button for go back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,54 +91,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/covidstring" />
 
-    <ImageButton
-        android:id="@+id/imageButton116"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:background="#00000000"
-        android:contentDescription="Button for go 10"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton119"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11"
-        app:layout_constraintVertical_bias="0.05"
-        app:srcCompat="@drawable/tenminbutton" />
-
-    <ImageButton
-        android:id="@+id/imageButton119"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:background="#00000000"
-        android:contentDescription="Button for go 1hr"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton120"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11"
-        app:layout_constraintVertical_bias="0.05"
-        app:srcCompat="@drawable/onehrbutton" />
-
-    <ImageButton
-        android:id="@+id/imageButton120"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
-        android:background="#00000000"
-        android:contentDescription="Button for go 3hr"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11"
-        app:layout_constraintVertical_bias="0.05"
-        app:srcCompat="@drawable/threehrbutton" />
-
     <ImageView
         android:id="@+id/imageView41"
         android:layout_width="185dp"
         android:layout_height="25dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView43"
+        app:layout_constraintTop_toBottomOf="@+id/spinner8"
         app:srcCompat="@drawable/leavestring" />
 
     <EditText

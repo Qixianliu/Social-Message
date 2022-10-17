@@ -4,18 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activites.DoctorActivity">
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="230dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="180dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/quickstring" />
+    tools:context=".DoctorActivity">
 
     <ImageButton
         android:id="@+id/imageButton31"
@@ -27,14 +16,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.96"
+        app:layout_constraintVertical_bias="0.857"
         app:srcCompat="@drawable/sendbutton" />
 
     <ImageButton
         android:id="@+id/imageButton30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="592dp"
+        android:layout_marginTop="512dp"
         android:background="#00000000"
         android:contentDescription="Button for alert"
 
@@ -43,36 +32,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/alertbutton" />
 
-    <EditText
-        android:id="@+id/editTextTime2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="24dp"
-        android:contentDescription="Selector for time"
-        android:ems="10"
-        android:inputType="time"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView21"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton123"
-        tools:ignore="EditableContentDescCheck" />
-
     <ImageView
         android:id="@+id/imageView21"
         android:layout_width="170dp"
         android:layout_height="21dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton123"
-        app:srcCompat="@drawable/selecttimestring" />
+        app:srcCompat="@drawable/selecttimestring"
+        tools:layout_editor_absoluteY="249dp" />
 
     <Spinner
         android:id="@+id/spinner4"
         android:layout_width="340dp"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="dropdown for contact list"
         android:hint="Email"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,6 +57,7 @@
         android:id="@+id/imageView12"
         android:layout_width="194dp"
         android:layout_height="21dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:background="#00000000"
+        android:background="F000000"
         android:contentDescription="Button for notifications"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:background="#00000000"
+        android:background="F000000"
         android:contentDescription="Button for go back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,70 +98,56 @@
         app:layout_constraintEnd_toStartOf="@+id/imageButton14"
         app:layout_constraintStart_toEndOf="@+id/imageButton13"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.525"
+        app:layout_constraintVertical_bias="0.291"
         app:srcCompat="@drawable/doctorstring" />
 
     <ImageButton
         android:id="@+id/imageButton121"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp"
         android:background="#00000000"
         android:contentDescription="Button for go 1hr"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton123"
-        app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
         app:srcCompat="@drawable/onehrbutton" />
 
     <ImageButton
         android:id="@+id/imageButton123"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="12dp"
         android:background="#00000000"
         android:contentDescription="Button for "
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton124"
-        app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
         app:srcCompat="@drawable/tenminbutton" />
 
     <ImageButton
         android:id="@+id/imageButton124"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="4dp"
         android:background="#00000000"
         android:contentDescription="Button for gos"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView17"
-        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
         app:srcCompat="@drawable/threehrbutton" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName8"
-        android:layout_width="363dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Message"
+    <ImageButton
+        android:id="@+id/imageButton116"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:background="#00000000"
+        android:contentDescription="Button for other time"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton30"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView76" />
-
-    <ImageView
-        android:id="@+id/imageView76"
-        android:layout_width="185dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView21"
-        app:srcCompat="@drawable/leavestring" />
+        app:srcCompat="@drawable/timeanddatebutton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
