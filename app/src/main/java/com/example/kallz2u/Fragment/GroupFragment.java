@@ -8,12 +8,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.example.kallz2u.R;
 import com.example.kallz2u.activites.AddNewGroupActivity;
-import com.example.kallz2u.activites.CreateGroupActivity;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -7,18 +7,12 @@
     tools:context=".Fragment.GroupMemberFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/selectedRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:itemCount="1"
-        android:layout_marginTop="5dp" />
+
 
     <LinearLayout
         android:id="@+id/contactLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/selectedRecyclerView"
         android:layout_marginTop="5dp"
         android:orientation="horizontal">
         <TextView
@@ -33,7 +27,7 @@
             android:layout_height="10dp"
             android:layout_marginStart="5dp"
             android:layout_gravity="center_vertical"
-            android:background="@color/black"/>
+            android:background="@color/lightpeach"/>
 
     </LinearLayout>
 
@@ -50,10 +44,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:src="@drawable/iconback"
         android:backgroundTint="@color/lightpeach"
+        android:src="@drawable/iconback"
         android:tint="@color/black"
-        app:useCompatPadding="true"/>
+        app:useCompatPadding="true" />
 
 
 

@@ -25,9 +25,6 @@
         <!--            android:name=".activites.DashBoardActivity"-->
         <!--            android:exported="false">-->
         <!--        </activity>-->
-        <activity
-            android:name=".activites.CreateGroupActivity"
-            android:exported="false" />
         <activity android:name=".activites.AddNewGroupActivity"/>
         <activity android:name=".activites.FourthActivity"/>
         <activity android:name=".activites.GardeningActivity"/>

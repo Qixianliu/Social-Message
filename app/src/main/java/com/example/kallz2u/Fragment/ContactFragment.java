@@ -29,7 +29,6 @@ public class ContactFragment extends Fragment {
 
     private View ContactsView;
     private RecyclerView myContactsList;
-
     private DatabaseReference databaseReference, UsersRef;
     private RecyclerView recyclerView;
     private FirebaseAuth firebaseAuth;
@@ -38,7 +37,6 @@ public class ContactFragment extends Fragment {
     public ContactFragment(){
 
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -53,8 +51,6 @@ public class ContactFragment extends Fragment {
 
         firebaseAuth = FirebaseAuth.getInstance();
         currentUserId = firebaseAuth.getCurrentUser().getUid();
-
-
 
         // Inflate the layout for this fragment
         return ContactsView;
@@ -114,91 +110,4 @@ public class ContactFragment extends Fragment {
             email = itemView.findViewById(R.id.txtContactEmail);
         }
     }
-
-
-
-
-
-
 }
-
-    /*private FragmentContactBinding binding;
-    private DatabaseReference databaseReference;
-    private Permissions permissions;
-    private PreferenceManager preferenceManager;
-
-    private void getUsers(){
-        loading(true);
-        FirebaseFirestore database = FirebaseFirestore.getInstance();
-        database.collection(Constants.KEY_COLLECTION_USER)
-                .get()
-                .addOnCompleteListener(task -> {
-                    loading(false);
-                    String currentUserId = preferenceManager.getString(Constants.KEY_USER_ID);
-                    if (task.isSuccessful() && task.getResult() != null){
-                        List<User> users = new ArrayList<>();
-                        for(QueryDocumentSnapshot queryDocumentSnapshot : task.getResult()){
-                            if (currentUserId.equals(queryDocumentSnapshot.getId())){
-                                continue;
-                            }
-                            User user = new User();
-                            user.username = queryDocumentSnapshot.getString(Constants.KEY_NAME);
-                            user.email = queryDocumentSnapshot.getString(Constants.KEY_EMAIL);
-                            users.add(user);
-                        }
-                        if (users.size() > 0){
-                            UsersAdapter usersAdapter = new UsersAdapter(users);
-                            binding.usersRecyclerView.setAdapter(usersAdapter);
-                            binding.usersRecyclerView.setVisibility(View.VISIBLE);
-                        }else {
-                            showErrorMessage();
-                        }
-                    }else {
-                        showErrorMessage();
-                    }
-                });
-    }
-
-    private void showErrorMessage(){
-
-    }
-
-    private void loading(Boolean isLoading){
-            if (isLoading){
-                binding.imageButton84.setVisibility(View.VISIBLE);
-            }else{
-                binding.imageButton84.setVisibility(View.INVISIBLE);
-            }
-    }
-
-
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        binding = FragmentContactBinding.inflate(getLayoutInflater());
-        View view = binding.getRoot();
-        preferenceManager = new PreferenceManager(getContext());
-        getUsers();
-    }*/
-
-    /*private void getUserContact(){
-        if(permissions.isContactOk(getContext())){
-            String[] projection = new String[]{
-                    ContactsContract.Contacts.DISPLAY_NAME,
-                    ContactsContract.CommonDataKinds.Email.
-            };
-
-            ContentResolver cr = getActivity().getContentResolver();
-            Cursor cursor=cr.query(ContactsContract.CommonDataKinds.Email.CONTENT_URI,projection,null,null,null);
-            if(cursor != null){
-                while(cursor.moveToFirst()){
-                    String name=cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Email.DISPLAY_NAME));
-                    String email=cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Email.DISPLAY_EMAIL);
-
-                }
-            }
-        }else{
-
-        }
-
-    }*/
