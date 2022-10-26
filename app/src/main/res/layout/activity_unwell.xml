@@ -19,19 +19,6 @@
         app:layout_constraintVertical_bias="0.863"
         app:srcCompat="@drawable/sendbutton" />
 
-    <ImageButton
-        android:id="@+id/imageButton65"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="520dp"
-        android:background="#00000000"
-        android:contentDescription="Button for alert"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/alertbutton" />
-
     <Spinner
         android:id="@+id/spinner9"
         android:layout_width="340dp"

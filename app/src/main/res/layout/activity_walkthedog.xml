@@ -19,19 +19,6 @@
         app:layout_constraintVertical_bias="0.864"
         app:srcCompat="@drawable/sendbutton" />
 
-    <ImageButton
-        android:id="@+id/imageButton34"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="512dp"
-        android:background="#00000000"
-        android:contentDescription="Button for alert"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/alertbutton" />
-
     <ImageView
         android:id="@+id/imageView28"
         android:layout_width="170dp"
@@ -144,12 +131,12 @@
         android:id="@+id/imageButton120"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="84dp"
+        android:layout_marginBottom="148dp"
         android:background="#00000000"
         android:contentDescription="Button for other time"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton34"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton35"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/timeanddatebutton" />
 
