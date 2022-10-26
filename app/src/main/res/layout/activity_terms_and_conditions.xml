@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Terms_and_conditionsActivity">
+    tools:context=".activites.Terms_and_conditionsActivity">
 
     <ImageButton
         android:id="@+id/imageButton128"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:background="F000000"
+        android:background="@color/white"
         android:contentDescription="Button for go back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

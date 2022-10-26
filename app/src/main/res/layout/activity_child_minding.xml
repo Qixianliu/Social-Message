@@ -132,7 +132,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="160dp"
-        android:background="#000000000"
+        android:background="@color/white"
         android:contentDescription="Button for other time"
         app:layout_constraintBottom_toTopOf="@+id/imageButton12"
         app:layout_constraintEnd_toEndOf="parent"
