@@ -100,4 +100,28 @@ android:background="@drawable/gradient"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/k2uv2" />
 
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="#00000000"
+        android:contentDescription="Button for terms and conditions"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/checkBox3"
+        app:srcCompat="@drawable/termsstring" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
