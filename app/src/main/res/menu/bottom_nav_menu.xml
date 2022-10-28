@@ -7,8 +7,10 @@
         />
     <item
         android:id="@+id/MenuGroup"
-        android:title="Group"
-        android:icon="@drawable/groupicon"/>
+        android:icon="@drawable/groupicon"
+        android:title="Group" />
+
+
     <item
         android:id="@+id/MenuContact"
         android:title="Contact"

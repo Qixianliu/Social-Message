@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activites.GroupActivity">
+    tools:context=".activites.MessagesActivity"
+    >
 
 
 
     <ImageButton
-        android:id="@+id/imageButton88"
+        android:id="@+id/imageButton77"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -22,7 +23,7 @@
         app:srcCompat="@drawable/iconnotification" />
 
     <ImageButton
-        android:id="@+id/imageButton80"
+        android:id="@+id/imageButton72"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -34,38 +35,64 @@
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/iconback" />
 
+
+
     <ImageView
-        android:id="@+id/imageView64"
+        android:id="@+id/imageView55"
         android:layout_width="151dp"
-        android:layout_height="22dp"
+        android:layout_height="21dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton88"
-        app:layout_constraintStart_toEndOf="@+id/imageButton80"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton77"
+        app:layout_constraintStart_toEndOf="@+id/imageButton72"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/groupstring" />
-
+        app:srcCompat="@drawable/messagestring" />
 
     <ImageView
-        android:id="@+id/imageView66"
-        android:layout_width="170dp"
-        android:layout_height="17dp"
-        android:layout_marginBottom="68dp"
+        android:id="@+id/imageView56"
+        android:layout_width="338dp"
+        android:layout_height="207dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView57"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/urgentmessage" />
+
+    <ImageView
+        android:id="@+id/imageView57"
+        android:layout_width="338dp"
+        android:layout_height="207dp"
+        android:layout_marginBottom="84dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/addgroupstring" />
+        app:srcCompat="@drawable/nonurgentmessage" />
 
     <ImageButton
-        android:id="@+id/imageButton133"
+        android:id="@+id/imageButton83"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="96dp"
+        android:layout_marginTop="372dp"
         android:background="#00000000"
-        android:contentDescription="Button for alert"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="Button for accepting"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/alertbutton" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/acceptbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="576dp"
+        android:background="#00000000"
+        android:contentDescription="Button for accepting"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/acceptbuttonv2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

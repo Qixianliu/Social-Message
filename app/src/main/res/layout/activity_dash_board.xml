@@ -16,7 +16,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconSize="45dp"
+        app:labelVisibilityMode="unlabeled"
+        />
+
 
     <FrameLayout
         android:id="@+id/container"
