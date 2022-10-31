@@ -140,18 +140,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/timeanddatebutton" />
 
-    <ImageButton
-        android:id="@+id/imageButton26"
+    <ImageView
+        android:id="@+id/imageView85"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:background="#00000000"
-        android:contentDescription="Button for location"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton12"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/locationbuttonv2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton142"
+        app:srcCompat="@drawable/location" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName8"
+        android:layout_width="380dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView85" />
 
     <!-- Help me -->
 

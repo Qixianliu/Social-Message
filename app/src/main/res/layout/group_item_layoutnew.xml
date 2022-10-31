@@ -59,4 +59,13 @@
         app:srcCompat="@drawable/supportgroupsstring"
         tools:layout_editor_absoluteX="53dp"
         tools:layout_editor_absoluteY="306dp" />
+
+    <ImageView
+        android:id="@+id/imageView83"
+        android:layout_width="136dp"
+        android:layout_height="18dp"
+        app:srcCompat="@drawable/professional"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="344dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -102,17 +102,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView79" />
 
-    <ImageButton
-        android:id="@+id/imageButton61"
+    <ImageView
+        android:id="@+id/imageView89"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
-        android:background="#00000000"
-        android:contentDescription="Button for location"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton58"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/locationbuttonv2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10"
+        app:srcCompat="@drawable/location" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName15"
+        android:layout_width="368dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView89" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
