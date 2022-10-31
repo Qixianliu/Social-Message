@@ -14,7 +14,7 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.kallz2u.databinding.ActivitySignUpBinding;
+//import com.example.kallz2u.databinding.ActivitySignUpBinding;
 import com.example.kallz2u.utilities.Constants;
 import com.example.kallz2u.utilities.PreferenceManager;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -26,20 +26,20 @@ import java.util.HashMap;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    private ActivitySignUpBinding binding;
+    //private ActivitySignUpBinding binding;
 //    private PreferenceManager preferenceManager;
 //    private String encodedImage;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        binding = ActivitySignUpBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-        setListeners();
-    }
+    //@Override
+    //protected void onCreate(Bundle savedInstanceState) {
+        //super.onCreate(savedInstanceState);
+        //binding = ActivitySignUpBinding.inflate(getLayoutInflater());
+       // setContentView(binding.getRoot());
+        //setListeners();
+    //}
 //
-    private void setListeners() {
-        binding.buttonToSignIn.setOnClickListener(v -> onBackPressed());
-    }
+    //private void setListeners() {
+        //binding.buttonToSignIn.setOnClickListener(v -> onBackPressed());
+    //}
         /*binding.button.setOnClickListener(v ->{
             if(isValidSignUpDetails()){
                 signUp();
