@@ -1,0 +1,694 @@
+[
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\font_open_sans_light.ttf.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\font\\open_sans_light.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_hellostring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\hellostring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_iconnotification.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\iconnotification.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_urgentfrom_item_layout.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\urgentfrom_item_layout.xml"
+    },
+    {
+        "merged": "com.example.kallz2u.app-merged_res-30:/layout_fragment_group.xml.flat",
+        "source": "com.example.kallz2u.app-main-32:/layout/fragment_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_newcontactstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\newcontactstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_grouptype.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\grouptype.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_nonurgentstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\nonurgentstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-v24_editbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-v24\\editbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_pinktime.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\pinktime.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity1.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity1.xml"
+    },
+    {
+        "merged": "com.example.kallz2u.app-merged_res-30:/layout_fragment_group_request.xml.flat",
+        "source": "com.example.kallz2u.app-main-32:/layout/fragment_group_request.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_threehrbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\threehrbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable_gradient.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable\\gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_chatstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\chatstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_group_item_layout.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\group_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_groupicon.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\groupicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_editbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\editbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_urgentmessage.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\urgentmessage.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_networkstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\networkstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_groupcard.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\groupcard.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_messages.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_messages.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_gardeningstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\gardeningstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_schedule_time.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_schedule_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_fragment_user_data.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\fragment_user_data.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_other.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_other.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_professionalbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\professionalbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_nonurgentmessage.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\nonurgentmessage.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_unwellstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\unwellstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_doctor.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\doctor.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_nonurgent_item_layout.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\nonurgent_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_childbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\childbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_servicegroupsstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\servicegroupsstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_others.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\others.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_orgsbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\orgsbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_fragment_group_member.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\fragment_group_member.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_urgentnow.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\urgentnow.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_fragment_group.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\fragment_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_user.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\user.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\font_open_sans_regular.ttf.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\font\\open_sans_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_groupnamestring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\groupnamestring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_new_contact.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_new_contact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_contactstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\contactstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\font_open_sans_extra_bold.ttf.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\font\\open_sans_extra_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_messagestring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\messagestring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_group.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_jason.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\jason.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_leavestring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\leavestring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-v24_homebutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-v24\\homebutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_car_breakdown.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_car_breakdown.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_loststring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\loststring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-v24_k2uv2.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-v24\\k2uv2.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_childstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\childstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_selecttimestring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\selecttimestring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_urgentfrom.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\urgentfrom.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-v24_userimg.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-v24\\userimg.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-pngs-25:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_imlost.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\imlost.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_supportgroupsbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\supportgroupsbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_contactdirbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\contactdirbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_sendbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\sendbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_addcontactstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\addcontactstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_doctor.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_doctor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_carbreakdownstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\carbreakdownstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_dogstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\dogstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_k2u.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\k2u.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_tenminbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\tenminbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_urgent.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\urgent.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_logoutbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\logoutbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_unwell.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_unwell.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-v24_groupicon.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-v24\\groupicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_sign_up.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_signin.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_signin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_servicegroupsbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\servicegroupsbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_add_new_group.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_add_new_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_profilebutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\profilebutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_groupstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\groupstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_termsstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\termsstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\font_open_sans_semi_bold.ttf.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\font\\open_sans_semi_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_child_minding.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_child_minding.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_redtime.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\redtime.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_termsandconditionsstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\termsandconditionsstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_moestring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\moestring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_terms_and_conditions.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_terms_and_conditions.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_timeanddatebutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\timeanddatebutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_acceptbuttonv2.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\acceptbuttonv2.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_blanklist.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\blanklist.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_iconback.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\iconback.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_addgroupstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\addgroupstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_lost.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_lost.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_addnewimh.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\addnewimh.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_unwellbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\unwellbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_chat.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_profilestring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\profilestring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_fifth.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_fifth.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_rectangle.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\rectangle.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_image1.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\image1.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_moeredstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\moeredstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_addbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\addbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_background.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_unwell.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\unwell.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_doctorstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\doctorstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_alertbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\alertbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_nonurgentcard.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\nonurgentcard.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\xml_files.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\xml\\files.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_covidstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\covidstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_contactbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\contactbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_customizebutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\customizebutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_petstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\petstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_onehrbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\onehrbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_walkthedog.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_walkthedog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-v24_contactbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-v24\\contactbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_contact_item_layout.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\contact_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\font_open_sans_bold.ttf.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\font\\open_sans_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\xml_network_security_policy.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\xml\\network_security_policy.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_menubar.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\menubar.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-v24_profilestring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-v24\\profilestring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_supportgroupsstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\supportgroupsstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_third.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_third.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_covid19.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_covid19.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_quickstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\quickstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_gardeningbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\gardeningbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_locationbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\locationbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_personalnetworkbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\personalnetworkbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_homebutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\homebutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_selectdatestring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\selectdatestring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_dash_board.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_dash_board.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_gardening.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_gardening.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_covidbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\covidbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_addnewstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\addnewstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_pet.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\pet.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_finishbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\finishbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_chat.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\chat.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_k2uv2.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\k2uv2.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-v24_profilebutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-v24\\profilebutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_group_item_layoutnew.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\group_item_layoutnew.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_listimg.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\listimg.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_recentcontactstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\recentcontactstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_acceptbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\acceptbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_orgsstring.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\orgsstring.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_sentmessage.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\sentmessage.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_colleagues.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\colleagues.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_activity_fourth.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_fourth.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_otherbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\otherbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_nonurgent.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\nonurgent.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_messagebutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\messagebutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\layout_fragment_contact.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\fragment_contact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_tenmin.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\tenmin.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_search.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\search.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_addcontactbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\addcontactbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_doctorbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\doctorbutton.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable_background_image.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable\\background_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_userimg.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\userimg.png"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-merged_res-30:\\drawable-ldpi_carbutton.png.flat",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\drawable-ldpi\\carbutton.png"
+    }
+]

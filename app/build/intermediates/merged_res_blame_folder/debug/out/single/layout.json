@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_child_minding.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_child_minding.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_car_breakdown.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_car_breakdown.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\urgentfrom_item_layout.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\urgentfrom_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\contact_item_layout.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\contact_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\fragment_group_member.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\fragment_group_member.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\group_item_layoutnew.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\group_item_layoutnew.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_third.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_third.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_doctor.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_doctor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity1.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_gardening.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_gardening.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\nonurgent_item_layout.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\nonurgent_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_messages.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_messages.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_fifth.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_fifth.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_other.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_other.xml"
+    },
+    {
+        "merged": "com.example.kallz2u.app-mergeDebugResources-29:/layout/fragment_group.xml",
+        "source": "com.example.kallz2u.app-main-32:/layout/fragment_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\fragment_contact.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\fragment_contact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\fragment_user_data.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\fragment_user_data.xml"
+    },
+    {
+        "merged": "com.example.kallz2u.app-mergeDebugResources-29:/layout/fragment_group_request.xml",
+        "source": "com.example.kallz2u.app-main-32:/layout/fragment_group_request.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_terms_and_conditions.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_terms_and_conditions.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_walkthedog.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_walkthedog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_chat.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_unwell.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_unwell.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_new_contact.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_new_contact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_covid19.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_covid19.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_signin.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_signin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_add_new_group.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_add_new_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\group_item_layout.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\group_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_dash_board.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_dash_board.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\fragment_group.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\fragment_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_group.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_lost.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_lost.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_schedule_time.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_schedule_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-mergeDebugResources-29:\\layout\\activity_fourth.xml",
+        "source": "C:\\Users\\Dodi\\.gradle\\daemon\\7.3.3\\com.example.kallz2u.app-main-32:\\layout\\activity_fourth.xml"
+    }
+]
