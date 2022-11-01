@@ -3,73 +3,62 @@ package com.example.kallz2u.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.kallz2u.R;
 import com.example.kallz2u.activites.AddNewGroupActivity;
+import com.example.kallz2u.bean.Group;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link GroupFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class GroupFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
     private ImageView btnAddGroup;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-    private View view;
+    private View GroupsView;
+    private RecyclerView myGroupList;
+    DatabaseReference databaseReference,UsersRef;
+    RecyclerView recyclerView;
+    FirebaseAuth firebaseAuth;
+    private String currentUserId;
 
     public GroupFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment GroupFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static GroupFragment newInstance(String param1, String param2) {
-        GroupFragment fragment = new GroupFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_group, container, false);
-        btnAddGroup = view.findViewById(R.id.imageView66);
+        GroupsView = inflater.inflate(R.layout.fragment_group, container, false);
+        myGroupList = GroupsView.findViewById(R.id.groupRecycleView);
+        myGroupList.setLayoutManager(new LinearLayoutManager(GroupsView.getContext()));
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Groups").child("email");
+        UsersRef = FirebaseDatabase.getInstance().getReference().child("Groups");
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        currentUserId = firebaseAuth.getCurrentUser().getUid();
+
+
+        btnAddGroup = GroupsView.findViewById(R.id.imageView66);
         initClick();
-        return view;
+        return GroupsView;
     }
 
     private void initClick() {
@@ -79,5 +68,54 @@ public class GroupFragment extends Fragment {
                 startActivity(new Intent(getActivity(), AddNewGroupActivity.class));
             }
         });
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        FirebaseRecyclerOptions<Group> options=
+                new FirebaseRecyclerOptions.Builder<Group>()
+                        .setQuery(databaseReference,Group.class)
+                        .build();
+
+        FirebaseRecyclerAdapter<Group,GroupViewHolder> adapter
+                =new FirebaseRecyclerAdapter<Group, GroupViewHolder>(options) {
+            @Override
+            protected void onBindViewHolder(@NonNull GroupViewHolder holder, int position, @NonNull Group model) {
+                String UserIDs = getRef(position).getKey();
+                UsersRef.child(UserIDs).addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        holder.groupName.setText(model.getGroupName());
+                        holder.groupType.setText(model.getGroupType());
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+            }
+
+            @NonNull
+            @Override
+            public GroupViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.group_item_layout,parent,false);
+                    GroupViewHolder viewHolder = new GroupViewHolder(view);
+                    return viewHolder;
+            }
+        };
+
+        myGroupList.setAdapter(adapter);
+        adapter.startListening();
+    }
+
+    public static class GroupViewHolder extends RecyclerView.ViewHolder{
+        TextView groupName,groupType;
+        public GroupViewHolder(@NonNull View itemView) {
+            super(itemView);
+            groupType = itemView.findViewById(R.id.txtGroupType);
+            groupName = itemView.findViewById(R.id.GroupName);
+        }
     }
 }
