@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -87,6 +88,9 @@ public class SignInActivity extends AppCompatActivity {
                 }
             }
         });
+
+        binding.terms.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(),Terms_and_conditionsActivity.class)));
+
         binding.buttonSignIn.setOnClickListener(view -> {
             if (signIn==0){
                 signIn();
@@ -99,15 +103,21 @@ public class SignInActivity extends AppCompatActivity {
                 signIn=1;
                 binding.buttonSignIn.setText("Sign Up");
                 binding.checkBox.setVisibility(View.GONE);
+                binding.checkBox2.setVisibility(View.VISIBLE);
+                binding.terms.setVisibility(View.VISIBLE);
                 binding.buttonSignUp.setText("To Sign In");
             }else {
                 signIn=0;
                 binding.buttonSignIn.setText("Sign In");
                 binding.checkBox.setVisibility(View.VISIBLE);
+                binding.checkBox2.setVisibility(View.GONE);
+                binding.terms.setVisibility(View.GONE);
                 binding.buttonSignUp.setText("To Sign Up");
             }
         });
     }
+
+
 
     private void signUp() {
         binding.progressBar.setVisibility(View.VISIBLE);

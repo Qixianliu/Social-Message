@@ -156,31 +156,26 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.679" />
 
+
     <CheckBox
         android:id="@+id/checkBox2"
         style="@style/Widget.AppCompat.CompoundButton.CheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/grey"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.679" />
-
-    <ImageButton
-        android:id="@+id/imageButton127"
+        android:visibility="gone"
+        android:checked="true"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/checkBox" />
+    <TextView
+        android:id="@+id/terms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="252dp"
-        android:background="#00000000"
-        android:contentDescription="Button for send"
-        android:minHeight="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/checkBox2"
-        app:srcCompat="@drawable/termsstring" />
+        app:layout_constraintTop_toTopOf="@+id/checkBox2"
+        android:text="Terms and condition"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

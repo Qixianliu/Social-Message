@@ -37,6 +37,7 @@
         <activity android:name=".activites.COVID19Activity"/>
         <activity android:name=".activites.unwellActivity"/>
         <activity android:name=".activites.otherActivity"/>
+        <activity android:name=".activites.Terms_and_conditionsActivity"/>
         <activity
             android:name=".activites.SignInActivity"
             android:exported="true">
