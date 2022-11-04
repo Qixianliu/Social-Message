@@ -13,119 +13,122 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.kallz2u.Fragment.GroupMemberFragment;
 import com.example.kallz2u.R;
-import com.example.kallz2u.bean.Groups;
+import com.example.kallz2u.bean.Group;
 import com.example.kallz2u.databinding.ActivityAddNewGroupBinding;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
+import com.example.kallz2u.utilities.PreferencesUtils;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.*;
+import com.google.firebase.database.ValueEventListener;
 
 public class AddNewGroupActivity extends AppCompatActivity {
     private EditText groupTitle;
-    private ImageButton imageButton89, finishBtn;
+    private String GroupType;
+    private ImageButton imageButton89, finishBtn,imageButton97,imageButton98,imageButton99,imageButton100,imageButton101,imageButton102;
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+    Group group;
 
-    private FirebaseAuth firebaseAuth;
-    private DatabaseReference mDatabase;
-    private ActivityAddNewGroupBinding binding;
-
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        binding = ActivityAddNewGroupBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-        mDatabase = FirebaseDatabase.getInstance().getReference();
-        setListeners();
-        firebaseAuth = FirebaseAuth.getInstance();
-        binding.imageButton103.setOnClickListener(done ->{
-            String groupName = binding.CreateGroupName.getText().toString().trim();
-            if (groupName.isEmpty()){
-                binding.CreateGroupName.setError("Filed is required");
-            }else{
-                Bundle bundle = new Bundle();
-                bundle.putString("GroupName",groupName);
-                GroupMemberFragment memberFragment=new GroupMemberFragment();
-            }
-        });
-    }
-
-    public void createNewGroup(String groupId,String groupName,String adminId){
-        Groups group = new Groups(groupName,adminId);
-        mDatabase.child("Groups").child(groupId).setValue(group);
-    }
-
-    private void setListeners(){
-    }
-
-    /*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_group);
-        imageButton89 = findViewById(R.id.imageButton89);
+        groupTitle = findViewById(R.id.CreateGroupName);
+
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference("Groups");
+        group =new Group();
+        finishBtn = findViewById(R.id.imageButton103);
+
+        finishBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String groupName = groupTitle.getText().toString();
+                String groupType = GroupType;
+                if (TextUtils.isEmpty(groupName)){
+                    Toast.makeText(AddNewGroupActivity.this,"Group Name is required!",Toast.LENGTH_SHORT).show();
+                }else if(GroupType.isEmpty()){
+                    Toast.makeText(AddNewGroupActivity.this,"Group Type is required!",Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    addDataToFirebase(groupName,groupType);
+                }
+            }
+        });
+
+        //group type buttons
+        imageButton97 = findViewById(R.id.imageButton97);
+        imageButton98 = findViewById(R.id.imageButton98);
+        imageButton99 = findViewById(R.id.imageButton99);
+        imageButton100 = findViewById(R.id.imageButton100);
+        imageButton101 = findViewById(R.id.imageButton101);
+        imageButton102 = findViewById(R.id.imageButton102);
+        imageButton97.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GroupType = "Personal network";
+            }
+        });
+        imageButton98.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GroupType = "ORGs";
+            }
+        });
+        imageButton99.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GroupType = "Service group";
+            }
+        });
+        imageButton100.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GroupType = "Support group";
+            }
+        });
+        imageButton101.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GroupType = "Professional group";
+            }
+        });
+        imageButton102.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GroupType = "Customize";
+            }
+        });
+
+
+
+        imageButton89 = findViewById(R.id.imageButton89);//back button
         imageButton89.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
         });
+    }
 
-        groupTitle = findViewById(R.id.CreateGroupName);
-        finishBtn = findViewById(R.id.imageButton103);
+    private void addDataToFirebase(String groupName,String groupType){
+        group.setGroupType(groupType);
+        group.setGroupName(groupName);
 
-        finishBtn.setOnClickListener(new View.OnClickListener() {
+        databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onClick(View view) {
-                startCreatingGroup();
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                databaseReference.child("email").child(groupName).setValue(group);
+                Toast.makeText(AddNewGroupActivity.this,"New Group Created",Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(AddNewGroupActivity.this,"Failed to create",Toast.LENGTH_SHORT).show();
             }
         });
-
-        firebaseAuth = FirebaseAuth.getInstance();
-        checkUser();
     }
-
-    private void startCreatingGroup() {
-        String groupName = groupTitle.getText().toString().trim();
-        if (TextUtils.isEmpty(groupName)){
-            Toast.makeText(this,"Please enter group name!",Toast.LENGTH_SHORT).show();
-            return;
-        }
-
-
-    }
-
-    private void createGroup(String g_timestamp,String groupTitle){
-        //setup group info
-        HashMap<String,String> hashMap = new HashMap<>();
-        hashMap.put("groupId",""+g_timestamp);
-        hashMap.put("groupName",""+groupTitle);
-        hashMap.put("createBy",""+ firebaseAuth.getUid());
-
-        //create group
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Groups");
-        databaseReference.child(g_timestamp).setValue(hashMap)
-                .addOnSuccessListener(new OnSuccessListener<Void>() {
-                @Override
-                public void onSuccess(Void unused) {
-                    Toast.makeText(AddNewGroupActivity.this, "Group created successfully", Toast.LENGTH_SHORT).show();
-                }
-                 })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(AddNewGroupActivity.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
-                    }
-                });
-    }
-
-    private void checkUser() {
-        FirebaseUser user = firebaseAuth.getCurrentUser();
-        if (user != null){
-            getActionBar().setSubtitle(user.getEmail());
-        }
-    }
-    */
 }
