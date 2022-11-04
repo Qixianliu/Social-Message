@@ -55,7 +55,6 @@ public class AddNewGroupActivity extends AppCompatActivity {
                 }
                 else{
                     addDataToFirebase(groupName,groupType);
-
                 }
             }
         });

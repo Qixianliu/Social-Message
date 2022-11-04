@@ -26,6 +26,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CircleCrop;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.kallz2u.R;
+import com.example.kallz2u.activites.MymessageActivity;
 import com.example.kallz2u.activites.SignInActivity;
 import com.example.kallz2u.utilities.PreferencesUtils;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -65,7 +66,7 @@ public class ProfileFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private ImageView imageView34,imageButton53,imageButton54;
+    private ImageView imageView34,imageButton53,imageButton54,imageButton49;
     private View view;
     private ProgressDialog progressDialog;
     private EditText editTextTextPersonName;
@@ -110,6 +111,7 @@ public class ProfileFragment extends Fragment {
         imageView34 = view.findViewById(R.id.imageView34);
         imageButton53 = view.findViewById(R.id.imageButton53);
         imageButton54 = view.findViewById(R.id.imageButton54);
+        imageButton49 = view.findViewById(R.id.imageButton49);
         editTextTextPersonName = view.findViewById(R.id.editTextTextPersonName);
         imageView34.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -124,6 +126,12 @@ public class ProfileFragment extends Fragment {
                 i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP );
                 startActivity(i);
                 getActivity().finish();
+            }
+        });
+        imageButton49.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), MymessageActivity.class));
             }
         });
         imageButton54.setOnClickListener(new View.OnClickListener() {
