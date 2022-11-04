@@ -30,6 +30,8 @@ public class AddNewGroupActivity extends AppCompatActivity {
     private ImageButton imageButton89, finishBtn,imageButton97,imageButton98,imageButton99,imageButton100,imageButton101,imageButton102;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
+    FirebaseAuth firebaseAuth;
+
     Group group;
 
     @Override
@@ -39,7 +41,7 @@ public class AddNewGroupActivity extends AppCompatActivity {
         groupTitle = findViewById(R.id.CreateGroupName);
 
         firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference("Groups");
+        databaseReference = firebaseDatabase.getReference("users");
         group =new Group();
         finishBtn = findViewById(R.id.imageButton103);
 
@@ -117,11 +119,12 @@ public class AddNewGroupActivity extends AppCompatActivity {
     private void addDataToFirebase(String groupName,String groupType){
         group.setGroupType(groupType);
         group.setGroupName(groupName);
+        firebaseAuth = FirebaseAuth.getInstance();
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                databaseReference.child("email").child(groupName).setValue(group);
+                databaseReference.child(firebaseAuth.getUid()).child("groups").child(groupName).setValue(group);
                 Toast.makeText(AddNewGroupActivity.this,"New Group Created",Toast.LENGTH_SHORT).show();
             }
 
