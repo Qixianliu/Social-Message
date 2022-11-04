@@ -1,5 +1,6 @@
 package com.example.kallz2u.activites;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -57,6 +58,12 @@ public class AddNewGroupActivity extends AppCompatActivity {
                 }
                 else{
                     addDataToFirebase(groupName,groupType);
+                    String groupN = groupName;
+                    Bundle bundle = new Bundle();
+                    bundle.putString("GroupName",groupName);
+                    GroupMemberFragment memberFragment = new GroupMemberFragment();
+                    memberFragment.setArguments(bundle);
+                    startActivity(new Intent(AddNewGroupActivity.this,GroupMemberFragment.class));
                 }
             }
         });
