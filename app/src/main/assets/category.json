@@ -1,0 +1,245 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "type": "category",
+      "dataList": [
+        {
+          "id": "1",
+          "desc": "",
+          "type": "category",
+          "title": "坐姿划船",
+          "imgURL": "https://img0.baidu.com/it/u=3792303528,2558667778&fm=253&fmt=auto&app=138&f=GIF?w=700&h=453",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "2",
+          "desc": "",
+          "type": "category",
+          "title": "高位下拉",
+          "imgURL": "https://img1.baidu.com/it/u=672784823,2613866231&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=647",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "3",
+          "desc": "",
+          "type": "category",
+          "title": "哑铃弯矩",
+          "imgURL": "https://img2.baidu.com/it/u=112168243,1604726683&fm=253&fmt=auto&app=120&f=PNG?w=593&h=500",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        }, {
+          "id": "4",
+          "desc": "",
+          "type": "category",
+          "title": "哑铃划船",
+          "imgURL": "https://img1.baidu.com/it/u=3297246807,255179266&fm=253&fmt=auto&app=138&f=JPEG?w=640&h=334",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        }
+      ],
+      "moreIcon": "https://wicdn.xiaohongchun.com/xhc-plat/1499690581646_JYRiS8rkdp.png",
+      "moreText": "",
+      "moduleStyle": "nothing",
+      "moduleTitle": "上肢",
+      "moreLinkType": "storeTags",
+      "interfaceLink": "",
+      "moreLinkParam": "",
+      "moreTextDisplay": "true"
+    },
+    {
+      "type": "category",
+      "dataList": [
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "香水",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498724911895_6kAMePGyBJ.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "美甲",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498739521825_QrtNFGEmHP.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "彩妆套盒",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498724892846_6Yjf85CPCC.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        }
+      ],
+      "moreIcon": "https://wicdn.xiaohongchun.com/xhc-plat/1499690569496_jKyaBHe2Ze.png",
+      "moreText": "",
+      "moduleStyle": "nothing",
+      "moduleTitle": "躯干",
+      "moreLinkType": "topic",
+      "interfaceLink": "",
+      "moreLinkParam": "",
+      "moreTextDisplay": "true"
+    },
+    {
+      "type": "category",
+      "dataList": [
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "手足护理",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725874251_DHGniiQHPc.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "卫生巾",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725885218_hmRJY4Yaxk.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "成人用品",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498725909920_Fzj8BbNpn3.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        }
+      ],
+      "moreIcon": "https://wicdn.xiaohongchun.com/xhc-plat/1499690549966_xbr3ACA38e.png",
+      "moreText": "",
+      "moduleStyle": "nothing",
+      "moduleTitle": "下肢",
+      "moreLinkType": "html",
+      "interfaceLink": "",
+      "moreLinkParam": "",
+      "moreTextDisplay": "true"
+    },
+    {
+      "type": "category",
+      "dataList": [
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "上衣",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498727150555_AP2sPKpymp.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "下装",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498727184196_aKfMGBta83.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "连衣裙",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498727280790_XXSK5yn5Rn.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "袜子",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498727296840_r3dJDkFTZb.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "箱包",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498727310173_ZsHyJ573nt.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        }
+      ],
+      "moreIcon": "https://wicdn.xiaohongchun.com/xhc-plat/1499690592572_6PcAjFFXEA.png",
+      "moreText": "",
+      "moduleStyle": "nothing",
+      "moduleTitle": "头部",
+      "moreLinkType": "userId",
+      "interfaceLink": "",
+      "moreLinkParam": "",
+      "moreTextDisplay": "true"
+    },
+    {
+      "type": "category",
+      "dataList": [
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "美发工具",
+          "imgURL": "https://wicdn.xiaohongchun.com/xhc-plat/1498729407847_MTFz6rcWFM.png",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        }
+      ],
+      "moreIcon": "https://wicdn.xiaohongchun.com/xhc-plat/1499690614300_5EZYEEGH3b.png",
+      "moreText": "",
+      "moduleStyle": "nothing",
+      "moduleTitle": "全身",
+      "moreLinkType": "channelId",
+      "interfaceLink": "",
+      "moreLinkParam": "",
+      "moreTextDisplay": "true"
+    }
+  ]
+}

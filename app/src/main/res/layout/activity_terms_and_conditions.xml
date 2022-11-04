@@ -29,20 +29,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/termsandconditionsstring" />
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="361dp"
+        android:layout_height="642dp"
+        android:layout_marginBottom="4dp"
+        android:maxLines="1000"
         android:scrollbars="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton128"
-        app:layout_constraintStart_toStartOf="parent">
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:text="Terms and Conditions
+        android:text="Terms and Conditions
 Last updated: October 20, 2022
 Please read these terms and conditions carefully before using Our Service.
 Interpretation and Definitions
@@ -103,7 +98,7 @@ Contact Us
 If you have any questions about these Terms and Conditions, You can contact us:
 •	By mail: PO Box 8138, Newtown, VIC 3220
 "
-            />
-    </FrameLayout>
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
