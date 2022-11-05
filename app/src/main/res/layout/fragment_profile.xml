@@ -98,7 +98,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:contentDescription="Button for contact directory"
         app:layout_constraintTop_toBottomOf="@+id/imageView34"
-        app:srcCompat="@drawable/contactdirbutton" />
+        app:srcCompat="@drawable/tnd" />
 
     <ImageButton
         android:id="@+id/imageButton49"
