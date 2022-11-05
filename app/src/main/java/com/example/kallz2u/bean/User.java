@@ -6,6 +6,16 @@ import com.google.firebase.database.IgnoreExtraProperties;
 @IgnoreExtraProperties
 public class User {
 
+    public String uID;
+
+    public String getuID() {
+        return uID;
+    }
+
+    public void setuID(String uID) {
+        this.uID = uID;
+    }
+
     public String username;
     public String email;
 
@@ -32,6 +42,7 @@ public class User {
     public User(String username, String email) {
         this.username = username;
         this.email = email;
+        this.uID = uID;
     }
 
 }

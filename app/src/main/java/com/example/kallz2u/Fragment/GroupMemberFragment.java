@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.example.kallz2u.R;
 import com.example.kallz2u.activites.ContactItemInterface;
+import com.example.kallz2u.bean.GroupMemberModel;
 import com.example.kallz2u.bean.User;
 import com.example.kallz2u.databinding.FragmentGroupMemberBinding;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -59,6 +60,7 @@ public class GroupMemberFragment extends Fragment implements ContactItemInterfac
         currentUserId = firebaseAuth.getCurrentUser().getUid();
 
         selectedContacts=new ArrayList<>();
+
         //get group name from AddNewGroupActivity
         Bundle bundle=getArguments();
         if (bundle!=null){
@@ -85,12 +87,8 @@ public class GroupMemberFragment extends Fragment implements ContactItemInterfac
                 UsersRef.child(userIDs).addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        User user =
                         holder.username.setText(model.getUsername());
                         holder.email.setText(model.getEmail());
-                        holder.itemView.setOnClickListener(view -> {
-                            contactItemInterface.onContactClick(user,position,false);
-                        });
                     }
 
                     @Override
@@ -117,7 +115,12 @@ public class GroupMemberFragment extends Fragment implements ContactItemInterfac
 
     @Override
     public void onContactClick(User user, int position, boolean isSelected) {
+        if (isSelected){
+            selectedContacts.remove(user);
 
+        }else{
+
+        }
     }
 
     public static class GroupMemberViewHolder extends RecyclerView.ViewHolder{
@@ -129,5 +132,30 @@ public class GroupMemberFragment extends Fragment implements ContactItemInterfac
             username = itemView.findViewById(R.id.txtContactName);
             email = itemView.findViewById(R.id.txtContactEmail);
         }
+    }
+
+    private void addMember(){
+        for (User user : selectedContacts){
+        GroupMemberModel groupMemberModel = new GroupMemberModel();
+        groupMemberModel.id = user.getuID();
+        firebaseAuth = FirebaseAuth.getInstance();
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                databaseReference.child(firebaseAuth.getUid())
+                        .child("groups")
+                        .child(groupName)
+                        .child("Members")
+                        .child(user.getuID())
+                        .setValue(groupMemberModel);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+        }
+
     }
 }

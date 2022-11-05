@@ -63,7 +63,7 @@ public class AddNewGroupActivity extends AppCompatActivity {
                     bundle.putString("GroupName",groupName);
                     GroupMemberFragment memberFragment = new GroupMemberFragment();
                     memberFragment.setArguments(bundle);
-                    startActivity(new Intent(AddNewGroupActivity.this,GroupMemberFragment.class));
+                    //startActivity(new Intent(AddNewGroupActivity.this,GroupMemberFragment.class));
                 }
             }
         });
