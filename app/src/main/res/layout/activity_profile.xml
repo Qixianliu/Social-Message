@@ -86,26 +86,14 @@
         app:srcCompat="@drawable/profilebutton" />
 
     <ImageButton
-        android:id="@+id/imageButton47"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        android:contentDescription="Button for contact directory"
-        app:layout_constraintTop_toBottomOf="@+id/imageView34"
-        app:srcCompat="@drawable/contactdirbutton" />
-
-    <ImageButton
         android:id="@+id/imageButton49"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="Button for message"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        android:contentDescription="Button for message"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton47"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton18"
         app:srcCompat="@drawable/messagebutton" />
 
     <ImageButton
@@ -146,26 +134,25 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="12dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton47"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton54" />
+        app:layout_constraintEnd_toStartOf="@+id/imageButton54"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton54"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="12dp"
         android:background="#00000000"
         android:contentDescription="Button for edit"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton47"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.653"
         app:srcCompat="@drawable/editbutton" />
 
     <ImageButton
@@ -178,5 +165,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton39"
         app:srcCompat="@drawable/groupicon" />
+
+    <ImageButton
+        android:id="@+id/imageButton18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:contentDescription="Button for terms and condition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView34"
+        app:srcCompat="@drawable/tnd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
