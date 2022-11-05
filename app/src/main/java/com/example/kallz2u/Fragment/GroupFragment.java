@@ -8,26 +8,15 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.Volley;
-import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.chad.library.adapter.base.BaseViewHolder;
 import com.example.kallz2u.R;
 import com.example.kallz2u.activites.AddNewGroupActivity;
-import com.example.kallz2u.activites.COVID19Activity;
 import com.example.kallz2u.bean.Group;
-import com.example.kallz2u.bean.UserBean;
-import com.example.kallz2u.utilities.PostJsonRequest2;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
@@ -36,13 +25,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.FirebaseFirestore;
-
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class GroupFragment extends Fragment {
 
@@ -67,8 +49,8 @@ public class GroupFragment extends Fragment {
         myGroupList = GroupsView.findViewById(R.id.groupRecycleView);
         myGroupList.setLayoutManager(new LinearLayoutManager(GroupsView.getContext()));
         firebaseAuth = FirebaseAuth.getInstance();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("users").child(firebaseAuth.getUid()).child("groups");
-        UsersRef = FirebaseDatabase.getInstance().getReference().child("users").child(firebaseAuth.getUid()).child("groups");
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Groups").child(firebaseAuth.getUid()).child("groups");
+        UsersRef = FirebaseDatabase.getInstance().getReference().child("Groups").child(firebaseAuth.getUid()).child("groups");
 
         firebaseAuth = FirebaseAuth.getInstance();
         currentUserId = firebaseAuth.getCurrentUser().getUid();

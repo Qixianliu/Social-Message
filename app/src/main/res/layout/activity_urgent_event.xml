@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activites.COVID19Activity">
+    tools:context=".activites.UrgentEventActivity">
 
     <ImageButton
         android:id="@+id/imageButton62"
@@ -68,15 +68,19 @@
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/iconback" />
 
-    <ImageView
-        android:id="@+id/imageView44"
+    <TextView
+        android:id="@+id/txtWhat"
+        android:text="Urgent Now"
+
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/brown"
         android:layout_width="151dp"
-        android:layout_height="18dp"
-        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toStartOf="@+id/imageButton60"
         app:layout_constraintStart_toEndOf="@+id/imageButton59"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/covidstring" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView41"

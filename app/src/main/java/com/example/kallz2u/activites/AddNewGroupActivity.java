@@ -42,7 +42,7 @@ public class AddNewGroupActivity extends AppCompatActivity {
         groupTitle = findViewById(R.id.CreateGroupName);
 
         firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference("users");
+        databaseReference = firebaseDatabase.getReference("Groups");
         group =new Group();
         finishBtn = findViewById(R.id.imageButton103);
 

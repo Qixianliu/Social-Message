@@ -51,8 +51,8 @@ public class GroupSelectFragment extends Fragment {
         myGroupList = GroupsView.findViewById(R.id.groupRecycleView);
         myGroupList.setLayoutManager(new LinearLayoutManager(GroupsView.getContext()));
         firebaseAuth = FirebaseAuth.getInstance();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("users").child(firebaseAuth.getUid()).child("groups");
-        UsersRef = FirebaseDatabase.getInstance().getReference().child("users").child(firebaseAuth.getUid()).child("groups");
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Groups").child(firebaseAuth.getUid()).child("groups");
+        UsersRef = FirebaseDatabase.getInstance().getReference().child("Groups").child(firebaseAuth.getUid()).child("groups");
 
         firebaseAuth = FirebaseAuth.getInstance();
         currentUserId = firebaseAuth.getCurrentUser().getUid();
