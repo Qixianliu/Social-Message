@@ -15,8 +15,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.kallz2u.R;
-import com.example.kallz2u.activites.AddNewGroupActivity;
 import com.example.kallz2u.activites.FifthActivity;
+import com.example.kallz2u.activites.FourthActivity;
 import com.example.kallz2u.bean.Group;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -37,6 +37,7 @@ public class GroupSelectFragment extends Fragment {
     RecyclerView recyclerView;
     FirebaseAuth firebaseAuth;
     private String currentUserId;
+    int isUrgent;
 
 
     public GroupSelectFragment() {
@@ -59,6 +60,8 @@ public class GroupSelectFragment extends Fragment {
 
 
         btnAddGroup = GroupsView.findViewById(R.id.imageView66);
+        Bundle bundle = this.getArguments();
+        isUrgent = bundle.getInt("isUrgent");
 
         initClick();
         return GroupsView;
@@ -68,7 +71,8 @@ public class GroupSelectFragment extends Fragment {
         btnAddGroup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), AddNewGroupActivity.class));
+                AddNewGroupFragment addNewGroupFragment = new AddNewGroupFragment();
+                getFragmentManager().beginTransaction().replace(R.id.container,addNewGroupFragment).commit();
             }
         });
     }
@@ -90,13 +94,20 @@ public class GroupSelectFragment extends Fragment {
                 UsersRef.child(UserIDs).addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
+
                         holder.view.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Intent intent=new Intent(getActivity(), FifthActivity.class);
-                                intent.putExtra("GroupName",model.getGroupName());
-                                startActivity(intent);
-                            }
+
+                                if (isUrgent == 0){
+                                    Intent intent=new Intent(getActivity(), FourthActivity.class);
+                                    intent.putExtra("GroupName",model.getGroupName());
+                                    startActivity(intent);}
+                                else{
+                                    Intent intent=new Intent(getActivity(), FifthActivity.class);
+                                    intent.putExtra("GroupName",model.getGroupName());
+                                    startActivity(intent);}
+                                }
                         });
                         holder.groupName.setText(model.getGroupName());
                         holder.groupType.setText(model.getGroupType());

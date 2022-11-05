@@ -19,9 +19,6 @@ public class Activity1 extends AppCompatActivity {
         binding = Activity1Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.imageButton5.setOnClickListener(view -> startActivity(new Intent(
-                Activity1.this,ChildMindingActivity.class)));
-
         binding.imageButton4.setOnClickListener(view -> startActivity(new Intent(
                 Activity1.this,ThirdActivity.class)));
 

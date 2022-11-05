@@ -26,6 +26,8 @@ public class HomeFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     private View view;
+    int isUrgent = 0;
+
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -72,15 +74,22 @@ public class HomeFragment extends Fragment {
         imageButton7 = view.findViewById(R.id.imageButton7);
         imageButton8 = view.findViewById(R.id.imageButton8);
         imageButton7.setOnClickListener(new View.OnClickListener() {
+            GroupSelectFragment groupSelectFragment = new GroupSelectFragment();
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), FourthActivity.class));
+                isUrgent = 0;
+                Bundle bundle = new Bundle();
+                bundle.putInt("isUrgent",isUrgent);
+                GroupSelectFragment groupSelectFragment = new GroupSelectFragment();
+                groupSelectFragment.setArguments(bundle);
+                getFragmentManager().beginTransaction().replace(R.id.container,groupSelectFragment).commit();
             }
         });
         imageButton8.setOnClickListener(new View.OnClickListener() {
             GroupSelectFragment groupSelectFragment = new GroupSelectFragment();
             @Override
             public void onClick(View view) {
+
                 getFragmentManager().beginTransaction().replace(R.id.container,groupSelectFragment).commit();
             }
         });

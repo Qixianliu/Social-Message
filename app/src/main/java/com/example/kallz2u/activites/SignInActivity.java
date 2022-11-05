@@ -95,6 +95,8 @@ public class SignInActivity extends AppCompatActivity {
                 }
             }
         });
+
+        binding.terms.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(),Terms_and_conditionsActivity.class)));
         binding.buttonSignIn.setOnClickListener(view -> {
             if (signIn==0){
                 signIn();
@@ -108,10 +110,14 @@ public class SignInActivity extends AppCompatActivity {
                 binding.buttonSignIn.setText("Sign Up");
                 binding.checkBox.setVisibility(View.GONE);
                 binding.buttonSignUp.setText("To Sign In");
+                binding.checkBox2.setVisibility(View.VISIBLE);
+                binding.terms.setVisibility(View.VISIBLE);
             }else {
                 signIn=0;
                 binding.buttonSignIn.setText("Sign In");
                 binding.checkBox.setVisibility(View.VISIBLE);
+                binding.checkBox2.setVisibility(View.GONE);
+                binding.terms.setVisibility(View.GONE);
                 binding.buttonSignUp.setText("To Sign Up");
             }
         });

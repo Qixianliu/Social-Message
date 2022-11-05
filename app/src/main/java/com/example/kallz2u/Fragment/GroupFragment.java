@@ -1,6 +1,5 @@
 package com.example.kallz2u.Fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -15,7 +14,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.kallz2u.R;
-import com.example.kallz2u.activites.AddNewGroupActivity;
 import com.example.kallz2u.bean.Group;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -66,7 +64,9 @@ public class GroupFragment extends Fragment {
         btnAddGroup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), AddNewGroupActivity.class));
+                AddNewGroupFragment addNewGroupFragment = new AddNewGroupFragment();
+                getFragmentManager().beginTransaction().replace(R.id.container,addNewGroupFragment).commit();
+
             }
         });
     }
@@ -90,6 +90,17 @@ public class GroupFragment extends Fragment {
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         holder.groupName.setText(model.getGroupName());
                         holder.groupType.setText(model.getGroupType());
+                        holder.view.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Bundle result = new Bundle();
+                                result.putString("GroupDetail",model.getGroupName());
+                                GroupFragment groupFragment = new GroupFragment();
+                                GroupDetailFragment groupDetailFragment = new GroupDetailFragment();
+                                groupDetailFragment.setArguments(result);
+                                getFragmentManager().beginTransaction().replace(R.id.container,groupDetailFragment).commit();
+                            }
+                        });
                     }
 
                     @Override
@@ -114,10 +125,12 @@ public class GroupFragment extends Fragment {
 
     public static class GroupViewHolder extends RecyclerView.ViewHolder{
         TextView groupName,groupType;
+        View view;
         public GroupViewHolder(@NonNull View itemView) {
             super(itemView);
             groupType = itemView.findViewById(R.id.txtGroupType);
             groupName = itemView.findViewById(R.id.GroupName);
+            view = itemView;
         }
     }
 }
