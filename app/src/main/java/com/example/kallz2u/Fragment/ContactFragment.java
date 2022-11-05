@@ -12,8 +12,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.kallz2u.R;
+import com.example.kallz2u.activites.DashBoardActivity;
 import com.example.kallz2u.bean.User;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -74,6 +76,12 @@ public class ContactFragment extends Fragment {
                 UsersRef.child(userIDs).addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        holder.view.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Toast.makeText(getActivity(),"You clicked a contact",Toast.LENGTH_SHORT).show();
+                            }
+                        });
                         holder.username.setText(model.getUsername());
                         holder.email.setText(model.getEmail());
                     }
@@ -103,11 +111,13 @@ public class ContactFragment extends Fragment {
     public static class ContactsViewHolder extends RecyclerView.ViewHolder{
 
         TextView username, email;
+        View view;
 
         public ContactsViewHolder(@NonNull View itemView) {
             super(itemView);
             username = itemView.findViewById(R.id.txtContactName);
             email = itemView.findViewById(R.id.txtContactEmail);
+            view = itemView;
         }
     }
 }

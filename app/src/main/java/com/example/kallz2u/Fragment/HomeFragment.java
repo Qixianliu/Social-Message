@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +12,6 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import com.example.kallz2u.R;
-import com.example.kallz2u.activites.FifthActivity;
 import com.example.kallz2u.activites.FourthActivity;
 
 /**
@@ -31,6 +31,7 @@ public class HomeFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     private ImageButton imageButton8,imageButton7;
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -77,9 +78,10 @@ public class HomeFragment extends Fragment {
             }
         });
         imageButton8.setOnClickListener(new View.OnClickListener() {
+            GroupSelectFragment groupSelectFragment = new GroupSelectFragment();
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), FifthActivity.class));
+                getFragmentManager().beginTransaction().replace(R.id.container,groupSelectFragment).commit();
             }
         });
         return view;

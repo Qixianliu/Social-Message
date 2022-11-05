@@ -4,11 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/K2U/Social-Message/app/src/main/res/drawable/background_image.xml" value="0.1355" />
+        <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/activity1.xml" value="0.23333333333333334" />
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/activity_add_new_group.xml" value="0.264" />
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/activity_car_breakdown.xml" value="0.17889492753623187" />
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/activity_chat.xml" value="0.17889492753623187" />
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/activity_create_group.xml" value="0.25364583333333335" />
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/activity_dash_board.xml" value="0.25" />
+        <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/activity_fifth.xml" value="0.23278985507246377" />
+        <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/activity_group_select.xml" value="0.21195652173913043" />
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/activity_sign_up.xml" value="0.25364583333333335" />
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/activity_signin.xml" value="0.221875" />
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/activity_terms_and_conditions.xml" value="0.19519927536231885" />
@@ -16,8 +19,9 @@
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/contact_item_layout.xml" value="0.2" />
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/fragment_contact.xml" value="0.152" />
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/fragment_create_group.xml" value="0.25364583333333335" />
-        <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/fragment_group.xml" value="0.25" />
+        <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/fragment_group.xml" value="0.1037344398340249" />
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/fragment_group_member.xml" value="0.264" />
+        <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/fragment_group_select.xml" value="0.2477355072463768" />
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/fragment_profile.xml" value="0.25364583333333335" />
         <entry key="..\:/K2U/Social-Message/app/src/main/res/layout/fragment_user_data.xml" value="0.25" />
