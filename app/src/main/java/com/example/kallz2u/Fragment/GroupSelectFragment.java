@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -38,6 +39,7 @@ public class GroupSelectFragment extends Fragment {
     FirebaseAuth firebaseAuth;
     private String currentUserId;
     int isUrgent;
+    private ImageButton imageButton80;
 
 
     public GroupSelectFragment() {
@@ -64,6 +66,15 @@ public class GroupSelectFragment extends Fragment {
         isUrgent = bundle.getInt("isUrgent");
 
         initClick();
+
+        imageButton80 = GroupsView.findViewById(R.id.imageButton80);//back button
+        imageButton80.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                HomeFragment homeFragment = new HomeFragment();
+                getFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
+            }
+        });
         return GroupsView;
     }
 

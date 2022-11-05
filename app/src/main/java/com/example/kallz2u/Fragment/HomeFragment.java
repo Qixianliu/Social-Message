@@ -89,7 +89,11 @@ public class HomeFragment extends Fragment {
             GroupSelectFragment groupSelectFragment = new GroupSelectFragment();
             @Override
             public void onClick(View view) {
-
+                isUrgent = 1;
+                Bundle bundle = new Bundle();
+                bundle.putInt("isUrgent",isUrgent);
+                GroupSelectFragment groupSelectFragment = new GroupSelectFragment();
+                groupSelectFragment.setArguments(bundle);
                 getFragmentManager().beginTransaction().replace(R.id.container,groupSelectFragment).commit();
             }
         });

@@ -17,6 +17,7 @@ public class FourthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityFourthBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        binding.imageButton.setOnClickListener(view -> onBackPressed());
         binding.imageButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

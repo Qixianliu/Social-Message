@@ -19,6 +19,7 @@ public class FifthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityFifthBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        binding.imageButton.setOnClickListener(view -> onBackPressed());
 
         binding.imageButton11.setOnClickListener(new View.OnClickListener() {
             @Override

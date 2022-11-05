@@ -21,18 +21,16 @@
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/iconnotification" />
 
-    <ImageButton
-        android:id="@+id/imageButton80"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+    <ImageView
+        android:id="@+id/imageButton32"
+        android:layout_width="94dp"
+        android:layout_height="68dp"
         android:background="#00000000"
-        android:contentDescription="Button for go back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/iconback" />
+        app:srcCompat="@drawable/k2uv2" />
 
     <ImageView
         android:id="@+id/imageView64"
@@ -40,7 +38,7 @@
         android:layout_height="22dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toStartOf="@+id/imageButton88"
-        app:layout_constraintStart_toEndOf="@+id/imageButton80"
+        app:layout_constraintStart_toEndOf="@+id/imageButton32"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/groupstring" />
 
@@ -61,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView66"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton80">
+        app:layout_constraintTop_toBottomOf="@+id/imageButton32">
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/groupRecycleView"
             android:layout_width="match_parent"

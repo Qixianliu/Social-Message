@@ -43,8 +43,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".activites.DashBoardActivity" />
-        <activity android:name=".activites.Activity1" />
-        <activity android:name=".activites.ThirdActivity" />
         <activity android:name=".activites.FifthActivity" />
         <activity android:name=".activites.MymessageActivity" />
 

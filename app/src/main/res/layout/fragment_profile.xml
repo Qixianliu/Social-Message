@@ -18,18 +18,16 @@
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/iconnotification" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/imageButton32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_width="94dp"
+        android:layout_height="68dp"
         android:background="#00000000"
-        android:contentDescription="Button for go back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/iconback" />
+        app:srcCompat="@drawable/k2uv2" />
 
     <ImageView
         android:id="@+id/imageView30"
