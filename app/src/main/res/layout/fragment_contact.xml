@@ -18,12 +18,12 @@
         app:srcCompat="@drawable/k2uv2" />
 
     <ImageButton
-        android:id="@+id/imageButton130"
+        android:id="@+id/imageButton84"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:background="@color/white"
-        android:contentDescription="Button for notifications"
+        android:contentDescription="Button for notification"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -35,7 +35,7 @@
         android:layout_width="151dp"
         android:layout_height="20dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton130"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton84"
         app:layout_constraintStart_toEndOf="@+id/imageButton32"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/contactstring" />

@@ -11,6 +11,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.text.Html;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
@@ -48,9 +49,13 @@ public class MessagingService extends FirebaseMessagingService {
         }
         // Check if message contains a notification payload.
         if (remoteMessage.getNotification() != null) {
-            Message m = new Message(remoteMessage.getNotification().getTitle(),
-                    System.currentTimeMillis()+"",remoteMessage.getNotification().getBody());
-            m.save();
+            String[] arrayStr = remoteMessage.getNotification().getTitle().split("##");
+            if (arrayStr[4].equals("1")||arrayStr[4].equals("2")){
+                Message m = new Message(remoteMessage.getNotification().getTitle(),remoteMessage.getNotification().getBody(),Integer.valueOf(arrayStr[4]));
+                m.save();
+            }else {
+                Toast.makeText(this,"accepted",Toast.LENGTH_SHORT).show();
+            }
             Log.d(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
         }
 //        sendNotification(remoteMessage.getNotification().toString());

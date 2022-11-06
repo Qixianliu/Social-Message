@@ -30,9 +30,7 @@ public class PostJsonRequest2 extends JsonRequest<JSONObject> {
 
    private String productId = "1";
 
-   /**
-    * 构造函数，初始化请求对象
-    */
+
    public PostJsonRequest2(String url, String params, Response.Listener<JSONObject> listener,
                            Response.ErrorListener errorListener) {
       super(Request.Method.POST, url, params, listener, errorListener);
@@ -47,9 +45,7 @@ public class PostJsonRequest2 extends JsonRequest<JSONObject> {
       this.productId = productId;
    }
 
-   /**
-    * 重写请求头获取方法
-    */
+
    @Override
    public Map<String, String> getHeaders() throws AuthFailureError {
       Map<String, String> headers = new HashMap<String, String>();
