@@ -179,7 +179,6 @@
         android:layout_marginStart="10dp"
         android:textSize="15dp"
         android:visibility="gone"
-        android:layout_marginTop="5dp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/checkBox2" />
 

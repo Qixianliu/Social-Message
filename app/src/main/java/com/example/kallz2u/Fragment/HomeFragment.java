@@ -12,7 +12,10 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import com.example.kallz2u.R;
+import com.example.kallz2u.activites.FifthActivity;
 import com.example.kallz2u.activites.FourthActivity;
+import com.example.kallz2u.activites.MymessageActivity;
+import com.example.kallz2u.activites.Terms_and_conditionsActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -32,7 +35,7 @@ public class HomeFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private ImageButton imageButton8,imageButton7;
+    private ImageButton imageButton8,imageButton7,imageButton71;
 
 
     public HomeFragment() {
@@ -73,30 +76,35 @@ public class HomeFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_home, container, false);
         imageButton7 = view.findViewById(R.id.imageButton7);
         imageButton8 = view.findViewById(R.id.imageButton8);
+        imageButton71 =view.findViewById(R.id.imageButton71);
         imageButton7.setOnClickListener(new View.OnClickListener() {
-            GroupSelectFragment groupSelectFragment = new GroupSelectFragment();
+//            GroupSelectFragment groupSelectFragment = new GroupSelectFragment();
             @Override
             public void onClick(View view) {
-                isUrgent = 0;
-                Bundle bundle = new Bundle();
-                bundle.putInt("isUrgent",isUrgent);
-                GroupSelectFragment groupSelectFragment = new GroupSelectFragment();
-                groupSelectFragment.setArguments(bundle);
-                getFragmentManager().beginTransaction().replace(R.id.container,groupSelectFragment).commit();
+                startActivity(new Intent(getActivity(), FourthActivity.class));
+//                isUrgent = 0;
+//                Bundle bundle = new Bundle();
+//                bundle.putInt("isUrgent",isUrgent);
+//                GroupSelectFragment groupSelectFragment = new GroupSelectFragment();
+//                groupSelectFragment.setArguments(bundle);
+//                getFragmentManager().beginTransaction().replace(R.id.container,groupSelectFragment).commit();
             }
         });
         imageButton8.setOnClickListener(new View.OnClickListener() {
-            GroupSelectFragment groupSelectFragment = new GroupSelectFragment();
+//            GroupSelectFragment groupSelectFragment = new GroupSelectFragment();
             @Override
             public void onClick(View view) {
-                isUrgent = 1;
-                Bundle bundle = new Bundle();
-                bundle.putInt("isUrgent",isUrgent);
-                GroupSelectFragment groupSelectFragment = new GroupSelectFragment();
-                groupSelectFragment.setArguments(bundle);
-                getFragmentManager().beginTransaction().replace(R.id.container,groupSelectFragment).commit();
+                startActivity(new Intent(getActivity(), FifthActivity.class));
+//                isUrgent = 1;
+//                Bundle bundle = new Bundle();
+//                bundle.putInt("isUrgent",isUrgent);
+//                GroupSelectFragment groupSelectFragment = new GroupSelectFragment();
+//                groupSelectFragment.setArguments(bundle);
+//                getFragmentManager().beginTransaction().replace(R.id.container,groupSelectFragment).commit();
             }
         });
+
+        imageButton71.setOnClickListener(view -> startActivity(new Intent(getActivity(), MymessageActivity.class)));
         return view;
     }
 }

@@ -1,5 +1,6 @@
 package com.example.kallz2u.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,10 +11,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.kallz2u.R;
+import com.example.kallz2u.activites.MymessageActivity;
 import com.example.kallz2u.bean.Group;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -33,6 +36,7 @@ public class GroupFragment extends Fragment {
     RecyclerView recyclerView;
     FirebaseAuth firebaseAuth;
     private String currentUserId;
+    private ImageButton imageButton88;
 
     public GroupFragment() {
         // Required empty public constructor
@@ -53,7 +57,8 @@ public class GroupFragment extends Fragment {
         firebaseAuth = FirebaseAuth.getInstance();
         currentUserId = firebaseAuth.getCurrentUser().getUid();
 
-
+        imageButton88 = GroupsView.findViewById(R.id.imageButton88);
+        imageButton88.setOnClickListener(view -> startActivity(new Intent(getActivity(), MymessageActivity.class)));
         btnAddGroup = GroupsView.findViewById(R.id.imageView66);
 
         initClick();

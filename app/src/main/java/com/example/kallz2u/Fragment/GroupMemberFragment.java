@@ -7,10 +7,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentResultListener;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,18 +28,15 @@ import com.google.firebase.database.ValueEventListener;
 
 public class GroupMemberFragment extends Fragment {
 
-
     private View ContactsView;
     private RecyclerView myContactList;
     private DatabaseReference databaseReference, UsersRef,database2;
     private FirebaseAuth firebaseAuth;
     private String currentUserId,groupName;
     FirebaseDatabase firebaseDatabase;
-    private Button button;
     public GroupMemberFragment(){
 
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -51,7 +48,7 @@ public class GroupMemberFragment extends Fragment {
 
         databaseReference = FirebaseDatabase.getInstance().getReference().child("users");
         UsersRef = FirebaseDatabase.getInstance().getReference().child("users");
-        
+
 
         firebaseAuth = FirebaseAuth.getInstance();
         currentUserId = firebaseAuth.getCurrentUser().getUid();

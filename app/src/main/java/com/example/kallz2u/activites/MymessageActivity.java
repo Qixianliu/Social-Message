@@ -33,12 +33,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-/**
- * @Author : kezhijie
- * @Email : 827112947@qq.com
- * @Date : on 2022-11-03 09:46.
- * @Description :描述
- */
 public class MymessageActivity extends AppCompatActivity {
     private MAdapter2 adapter;
     private List<Message> mList;
@@ -110,6 +104,7 @@ public class MymessageActivity extends AppCompatActivity {
         protected void convert(@NonNull BaseViewHolder helper, Message item) {
             if (item.getItemType()==1){
                 String[] arratStr = item.getContent().split("##");
+                Log.d("=========",item.getContent());
                 helper.setText(R.id.imageView45,item.getBy_email())
                         .setText(R.id.tv_tip,arratStr[0])
                         .setText(R.id.imageView46,arratStr[2])

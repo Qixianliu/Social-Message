@@ -9,7 +9,7 @@ public class Message extends LitePalSupport implements MultiItemEntity {
     private String content;
     private String add_time;
     private String by_email;
-    private int type; //0 紧急 1不紧急
+    private int type; //0 urgent 1non urgent
 
     public Message(String content, String add_time, String by_email) {
         this.content = content;

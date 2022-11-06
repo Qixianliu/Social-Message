@@ -39,8 +39,8 @@
         android:layout_marginTop="10dp"
         tools:listitem="@layout/contact_item_layout" />
 
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -49,6 +49,7 @@
         android:src="@drawable/iconback"
         android:tint="@color/black"
         app:useCompatPadding="true" />
+>>>>>>> e2f03b16e2582b1524e9f790ccae19c8ded1fc29
 
 
 

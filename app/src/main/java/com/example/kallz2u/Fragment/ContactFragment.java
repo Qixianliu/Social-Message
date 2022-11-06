@@ -1,6 +1,7 @@
 
 package com.example.kallz2u.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,11 +12,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.kallz2u.R;
 import com.example.kallz2u.activites.DashBoardActivity;
+import com.example.kallz2u.activites.MymessageActivity;
 import com.example.kallz2u.bean.User;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -35,6 +38,7 @@ public class ContactFragment extends Fragment {
     private RecyclerView recyclerView;
     private FirebaseAuth firebaseAuth;
     private String currentUserId;
+    private ImageButton imageButton84;
 
     public ContactFragment(){
 
@@ -53,7 +57,8 @@ public class ContactFragment extends Fragment {
 
         firebaseAuth = FirebaseAuth.getInstance();
         currentUserId = firebaseAuth.getCurrentUser().getUid();
-
+        imageButton84 = ContactsView.findViewById(R.id.imageButton130);
+        imageButton84.setOnClickListener(view -> startActivity(new Intent(getActivity(), MymessageActivity.class)));
         // Inflate the layout for this fragment
         return ContactsView;
     }

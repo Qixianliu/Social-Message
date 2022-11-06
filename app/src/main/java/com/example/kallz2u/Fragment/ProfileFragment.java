@@ -67,7 +67,7 @@ public class ProfileFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private ImageView imageView34,imageButton53,imageButton54,imageButton49,imageButton47;
+    private ImageView imageView34,imageButton53,imageButton54,imageButton49,imageButton47,imageButton33;
     private View view;
     private ProgressDialog progressDialog;
     private EditText editTextTextPersonName;
@@ -114,7 +114,10 @@ public class ProfileFragment extends Fragment {
         imageButton54 = view.findViewById(R.id.imageButton54);
         imageButton49 = view.findViewById(R.id.imageButton49);
         imageButton47 = view.findViewById(R.id.imageButton47);
+        imageButton33 = view.findViewById(R.id.imageButton33);
         editTextTextPersonName = view.findViewById(R.id.editTextTextPersonName);
+
+        imageButton33.setOnClickListener(view -> startActivity(new Intent(getActivity(), MymessageActivity.class)));
 
         imageButton47.setOnClickListener(view -> startActivity(new Intent(getActivity(), Terms_and_conditionsActivity.class)));
         imageView34.setOnClickListener(new View.OnClickListener() {

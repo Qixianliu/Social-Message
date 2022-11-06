@@ -28,69 +28,78 @@ import java.util.List;
 
 public class FourthActivity extends AppCompatActivity {
     private ActivityFourthBinding binding;
+    private List<UserBean> mList = new ArrayList<>();
     String nonWhat;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityFourthBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        getData();
         binding.imageButton.setOnClickListener(view -> onBackPressed());
         binding.imageButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 nonWhat = "Need a chat";
-                Intent intent = new Intent(getApplicationContext(),NonUrgentEventActivity.class);
-                intent.putExtra("nonWhat",""+nonWhat);
-                startActivity(intent);
+                chooseGroup(nonWhat);
+//                Intent intent = new Intent(getApplicationContext(),NonUrgentEventActivity.class);
+//                intent.putExtra("nonWhat",""+nonWhat);
+//                startActivity(intent);
             }
         });
         binding.imageButton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 nonWhat = "Child Minding";
-                Intent intent = new Intent(getApplicationContext(),NonUrgentEventActivity.class);
-                intent.putExtra("nonWhat",""+nonWhat);
-                startActivity(intent);
+                chooseGroup(nonWhat);
+//                Intent intent = new Intent(getApplicationContext(),NonUrgentEventActivity.class);
+//                intent.putExtra("nonWhat",""+nonWhat);
+//                startActivity(intent);
             }
         });
         binding.imageButton6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 nonWhat = "Gardening";
-                Intent intent = new Intent(getApplicationContext(),NonUrgentEventActivity.class);
-                intent.putExtra("nonWhat",""+nonWhat);
-                startActivity(intent);
+                chooseGroup(nonWhat);
+//                Intent intent = new Intent(getApplicationContext(),NonUrgentEventActivity.class);
+//                intent.putExtra("nonWhat",""+nonWhat);
+//                startActivity(intent);
             }
         });
         binding.imageButton9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 nonWhat = "Go to Doctor";
-                Intent intent = new Intent(getApplicationContext(),NonUrgentEventActivity.class);
-                intent.putExtra("nonWhat",""+nonWhat);
-                startActivity(intent);
+                chooseGroup(nonWhat);
+//                Intent intent = new Intent(getApplicationContext(),NonUrgentEventActivity.class);
+//                intent.putExtra("nonWhat",""+nonWhat);
+//                startActivity(intent);
             }
         });
         binding.imageButton10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 nonWhat = "Walk the Dog";
-                Intent intent = new Intent(getApplicationContext(),NonUrgentEventActivity.class);
-                intent.putExtra("nonWhat",""+nonWhat);
-                startActivity(intent);
+                chooseGroup(nonWhat);
+//                Intent intent = new Intent(getApplicationContext(),NonUrgentEventActivity.class);
+//                intent.putExtra("nonWhat",""+nonWhat);
+//                startActivity(intent);
             }
         });
         binding.imageButton16.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 nonWhat = "Car Breakdown";
-                Intent intent = new Intent(getApplicationContext(),NonUrgentEventActivity.class);
-                intent.putExtra("nonWhat",""+nonWhat);
-                startActivity(intent);
+                chooseGroup(nonWhat);
+//                Intent intent = new Intent(getApplicationContext(),NonUrgentEventActivity.class);
+//                intent.putExtra("nonWhat",""+nonWhat);
+//                startActivity(intent);
             }
         });
     }
-    private void chooseGroup(int choose){
+
+    private void chooseGroup(String nonWhat){
         AlertDialog.Builder b = new AlertDialog.Builder(this);
         RecyclerView re = new RecyclerView(this);
         Dialog d = b.create();
@@ -104,35 +113,30 @@ public class FourthActivity extends AppCompatActivity {
         adapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
-                switch (choose){
-                    case 1:
-                        startActivity(new Intent(FourthActivity.this,ChatActivity.class));
-                        break;
-                    case 2:
-                        startActivity(new Intent(FourthActivity.this,ChildMindingActivity.class));
-                        break;
-                    case 3:
-                        startActivity(new Intent(FourthActivity.this,GardeningActivity.class));
-                        break;
-                    case 4:
-                        startActivity(new Intent(FourthActivity.this, DoctorActivity.class));
-                        break;
-                    case 5:
-                        startActivity(new Intent(FourthActivity.this, WalkthedogActivity.class));
-                        break;
-                    case 6:
-                        startActivity(new Intent(FourthActivity.this,CarBreakdownActivity.class));
-                        break;
-                }
+                Intent intent = new Intent(getApplicationContext(),NonUrgentEventActivity.class);
+                intent.putExtra("nonWhat",""+nonWhat);
+                startActivity(intent);
                 d.dismiss();
             }
         });
         b.setView(re);
         b.show();
-
-
     }
-    private class GroupAdapter extends BaseQuickAdapter<GroupBean, BaseViewHolder>{
+    private void getData(){
+        CollectionReference loansRef = FirebaseFirestore.getInstance().collection("user");
+        loansRef.get()
+                .addOnSuccessListener(queryDocumentSnapshots -> {
+                    for (int i=0;i<queryDocumentSnapshots.getDocuments().size();i++){
+                        mList.add(new UserBean(queryDocumentSnapshots.getDocuments().get(i).getData().get("email").toString(),
+                                queryDocumentSnapshots.getDocuments().get(i).getData().get("pwd").toString(),
+                                queryDocumentSnapshots.getDocuments().get(i).getData().get("token").toString()));
+                    }
+                })
+                .addOnFailureListener(e -> {
+                    Log.e("==========",e.getMessage());
+                });
+    }
+    private class GroupAdapter extends BaseQuickAdapter<GroupBean, BaseViewHolder> {
 
         public GroupAdapter(int layoutResId) {
             super(layoutResId);
@@ -149,18 +153,4 @@ public class FourthActivity extends AppCompatActivity {
         }
     }
 
-    private void getData(){
-        CollectionReference loansRef = FirebaseFirestore.getInstance().collection("user");
-        loansRef.get()
-                .addOnSuccessListener(queryDocumentSnapshots -> {
-                    for (int i=0;i<queryDocumentSnapshots.getDocuments().size();i++){
-                        mList.add(new UserBean(queryDocumentSnapshots.getDocuments().get(i).getData().get("email").toString(),
-                                queryDocumentSnapshots.getDocuments().get(i).getData().get("pwd").toString(),
-                                queryDocumentSnapshots.getDocuments().get(i).getData().get("token").toString()));
-                    }
-                })
-                .addOnFailureListener(e -> {
-                    Log.e("==========",e.getMessage());
-                });
-    }
 }
