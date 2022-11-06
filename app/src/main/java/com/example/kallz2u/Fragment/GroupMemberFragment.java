@@ -50,8 +50,7 @@ public class GroupMemberFragment extends Fragment {
 
         databaseReference = FirebaseDatabase.getInstance().getReference().child("users");
         UsersRef = FirebaseDatabase.getInstance().getReference().child("users");
-
-        button = ContactsView.findViewById(R.id.floatButton);
+        
 
         firebaseAuth = FirebaseAuth.getInstance();
         currentUserId = firebaseAuth.getCurrentUser().getUid();
