@@ -7,6 +7,8 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -17,6 +19,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
 import com.example.kallz2u.R;
+import com.example.kallz2u.bean.Message;
 import com.example.kallz2u.bean.UserBean;
 import com.example.kallz2u.utilities.PostJsonRequest2;
 import com.example.kallz2u.utilities.PreferencesUtils;
@@ -26,6 +29,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class COVID19Activity extends AppCompatActivity {
@@ -53,7 +57,15 @@ public class COVID19Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.e("========","click");
-                test(editTextTextPersonName5.getText().toString(),mList.get(position).getToken());
+                test("COVID-19##"+new Date().toLocaleString()+"##"+editTextTextPersonName5.getText().toString()+"##"+mList.get(position).getToken()+"##1",mList.get(position).getToken());
+//                Message m = new Message("COVID-19##"+editTextTextPersonName5.getText().toString(),
+//                        new Date().toLocaleString(),"123123",0);
+//                boolean re = m.save();
+//                if (re){
+//                    Toast.makeText(COVID19Activity.this,"send success",Toast.LENGTH_SHORT).show();
+//                }else {
+//                    Toast.makeText(COVID19Activity.this,"send error",Toast.LENGTH_SHORT).show();
+//                }
             }
         });
         sp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -89,11 +101,13 @@ public class COVID19Activity extends AppCompatActivity {
                 data, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                Toast.makeText(COVID19Activity.this,"send success",Toast.LENGTH_SHORT).show();
                 Log.e("=============发送结果",response.toString());
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(COVID19Activity.this,"send error",Toast.LENGTH_SHORT).show();
                 Log.e("=============///",error.toString());
             }
         });

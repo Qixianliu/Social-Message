@@ -1,6 +1,5 @@
 package com.example.kallz2u.activites;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -31,8 +30,6 @@ public class AddNewGroupActivity extends AppCompatActivity {
     private ImageButton imageButton89, finishBtn,imageButton97,imageButton98,imageButton99,imageButton100,imageButton101,imageButton102;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
-    FirebaseAuth firebaseAuth;
-
     Group group;
 
     @Override
@@ -42,7 +39,7 @@ public class AddNewGroupActivity extends AppCompatActivity {
         groupTitle = findViewById(R.id.CreateGroupName);
 
         firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference("users");
+        databaseReference = firebaseDatabase.getReference("Groups");
         group =new Group();
         finishBtn = findViewById(R.id.imageButton103);
 
@@ -58,12 +55,6 @@ public class AddNewGroupActivity extends AppCompatActivity {
                 }
                 else{
                     addDataToFirebase(groupName,groupType);
-                    String groupN = groupName;
-                    Bundle bundle = new Bundle();
-                    bundle.putString("GroupName",groupName);
-                    GroupMemberFragment memberFragment = new GroupMemberFragment();
-                    memberFragment.setArguments(bundle);
-                    startActivity(new Intent(AddNewGroupActivity.this,GroupMemberFragment.class));
                 }
             }
         });
@@ -126,12 +117,11 @@ public class AddNewGroupActivity extends AppCompatActivity {
     private void addDataToFirebase(String groupName,String groupType){
         group.setGroupType(groupType);
         group.setGroupName(groupName);
-        firebaseAuth = FirebaseAuth.getInstance();
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                databaseReference.child(firebaseAuth.getUid()).child("groups").child(groupName).setValue(group);
+                databaseReference.child("email").child(groupName).setValue(group);
                 Toast.makeText(AddNewGroupActivity.this,"New Group Created",Toast.LENGTH_SHORT).show();
             }
 

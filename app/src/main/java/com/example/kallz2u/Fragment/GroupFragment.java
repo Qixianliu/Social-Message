@@ -92,12 +92,12 @@ public class GroupFragment extends Fragment {
 //                test(((UserBean)adapter.getData().get(position)).getToken());
 //            }
 //        });
-        /*GroupsView.findViewById(R.id.imageButton133).setOnClickListener(new View.OnClickListener() {
+        GroupsView.findViewById(R.id.imageButton133).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(), COVID19Activity.class));
             }
-        });*/
+        });
         return GroupsView;
     }
 
