@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,6 +35,7 @@ public class GroupMemberFragment extends Fragment {
     private FirebaseAuth firebaseAuth;
     private String currentUserId,groupName;
     FirebaseDatabase firebaseDatabase;
+    private Button button;
     public GroupMemberFragment(){
 
     }
@@ -49,6 +51,7 @@ public class GroupMemberFragment extends Fragment {
         databaseReference = FirebaseDatabase.getInstance().getReference().child("users");
         UsersRef = FirebaseDatabase.getInstance().getReference().child("users");
 
+        button = ContactsView.findViewById(R.id.floatButton);
 
         firebaseAuth = FirebaseAuth.getInstance();
         currentUserId = firebaseAuth.getCurrentUser().getUid();
