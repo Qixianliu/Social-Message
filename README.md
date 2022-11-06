@@ -18,4 +18,6 @@ Also need add sha-1 into firebase tutorial: https://www.youtube.com/watch?v=ULV5
 
 More in depth for android studio developing:  https://developer.android.com/courses/advanced-training/overview
 
+URL for github address: https://github.com/Qixianliu/Social-Message
+
 
