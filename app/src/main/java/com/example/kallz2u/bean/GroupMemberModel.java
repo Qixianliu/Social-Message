@@ -5,7 +5,7 @@ import android.os.Parcelable;
 
 public class GroupMemberModel implements Parcelable {
 
-    String id,role,token;
+    public String id,role,token;
 
     public GroupMemberModel(){
 

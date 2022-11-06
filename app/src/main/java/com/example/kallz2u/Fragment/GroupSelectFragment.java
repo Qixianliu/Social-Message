@@ -1,5 +1,6 @@
 package com.example.kallz2u.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,10 +11,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.kallz2u.R;
+import com.example.kallz2u.activites.FifthActivity;
+import com.example.kallz2u.activites.FourthActivity;
 import com.example.kallz2u.bean.Group;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -24,7 +28,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class GroupFragment extends Fragment {
+
+public class GroupSelectFragment extends Fragment {
 
     private ImageView btnAddGroup;
     private View GroupsView;
@@ -33,17 +38,19 @@ public class GroupFragment extends Fragment {
     RecyclerView recyclerView;
     FirebaseAuth firebaseAuth;
     private String currentUserId;
+    int isUrgent;
+    private ImageButton imageButton80;
 
-    public GroupFragment() {
+
+    public GroupSelectFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        GroupsView = inflater.inflate(R.layout.fragment_group, container, false);
+        GroupsView = inflater.inflate(R.layout.fragment_group_select, container, false);
         myGroupList = GroupsView.findViewById(R.id.groupRecycleView);
         myGroupList.setLayoutManager(new LinearLayoutManager(GroupsView.getContext()));
         firebaseAuth = FirebaseAuth.getInstance();
@@ -55,8 +62,19 @@ public class GroupFragment extends Fragment {
 
 
         btnAddGroup = GroupsView.findViewById(R.id.imageView66);
+        Bundle bundle = this.getArguments();
+        isUrgent = bundle.getInt("isUrgent");
 
         initClick();
+
+        imageButton80 = GroupsView.findViewById(R.id.imageButton80);//back button
+        imageButton80.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                HomeFragment homeFragment = new HomeFragment();
+                getFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
+            }
+        });
         return GroupsView;
     }
 
@@ -66,7 +84,6 @@ public class GroupFragment extends Fragment {
             public void onClick(View view) {
                 AddNewGroupFragment addNewGroupFragment = new AddNewGroupFragment();
                 getFragmentManager().beginTransaction().replace(R.id.container,addNewGroupFragment).commit();
-
             }
         });
     }
@@ -80,7 +97,7 @@ public class GroupFragment extends Fragment {
                         .setQuery(databaseReference,Group.class)
                         .build();
 
-        FirebaseRecyclerAdapter<Group,GroupViewHolder> adapter
+        FirebaseRecyclerAdapter<Group, GroupViewHolder> adapter
                 =new FirebaseRecyclerAdapter<Group, GroupViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull GroupViewHolder holder, int position, @NonNull Group model) {
@@ -88,19 +105,23 @@ public class GroupFragment extends Fragment {
                 UsersRef.child(UserIDs).addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        holder.groupName.setText(model.getGroupName());
-                        holder.groupType.setText(model.getGroupType());
+
                         holder.view.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Bundle result = new Bundle();
-                                result.putString("GroupDetail",model.getGroupName());
-                                GroupFragment groupFragment = new GroupFragment();
-                                GroupDetailFragment groupDetailFragment = new GroupDetailFragment();
-                                groupDetailFragment.setArguments(result);
-                                getFragmentManager().beginTransaction().replace(R.id.container,groupDetailFragment).commit();
-                            }
+
+                                if (isUrgent == 0){
+                                    Intent intent=new Intent(getActivity(), FourthActivity.class);
+                                    intent.putExtra("GroupName",model.getGroupName());
+                                    startActivity(intent);}
+                                else{
+                                    Intent intent=new Intent(getActivity(), FifthActivity.class);
+                                    intent.putExtra("GroupName",model.getGroupName());
+                                    startActivity(intent);}
+                                }
                         });
+                        holder.groupName.setText(model.getGroupName());
+                        holder.groupType.setText(model.getGroupType());
                     }
 
                     @Override
@@ -133,4 +154,5 @@ public class GroupFragment extends Fragment {
             view = itemView;
         }
     }
+
 }

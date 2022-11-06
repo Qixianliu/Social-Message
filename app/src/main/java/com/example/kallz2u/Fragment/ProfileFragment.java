@@ -28,6 +28,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.example.kallz2u.R;
 import com.example.kallz2u.activites.MymessageActivity;
 import com.example.kallz2u.activites.SignInActivity;
+import com.example.kallz2u.activites.Terms_and_conditionsActivity;
 import com.example.kallz2u.utilities.PreferencesUtils;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -66,7 +67,7 @@ public class ProfileFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private ImageView imageView34,imageButton53,imageButton54,imageButton49;
+    private ImageView imageView34,imageButton53,imageButton54,imageButton49,imageButton47;
     private View view;
     private ProgressDialog progressDialog;
     private EditText editTextTextPersonName;
@@ -112,7 +113,10 @@ public class ProfileFragment extends Fragment {
         imageButton53 = view.findViewById(R.id.imageButton53);
         imageButton54 = view.findViewById(R.id.imageButton54);
         imageButton49 = view.findViewById(R.id.imageButton49);
+        imageButton47 = view.findViewById(R.id.imageButton47);
         editTextTextPersonName = view.findViewById(R.id.editTextTextPersonName);
+
+        imageButton47.setOnClickListener(view -> startActivity(new Intent(getActivity(), Terms_and_conditionsActivity.class)));
         imageView34.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
