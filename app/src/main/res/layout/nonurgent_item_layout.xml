@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp">
 
     <ImageView
         android:id="@+id/imageView37"
@@ -13,39 +13,72 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/nonurgentcard" />
+        android:background="@drawable/nonurgentcard" />
 
-    <ImageView
+    <TextView
         android:id="@+id/imageView45"
-        android:layout_width="65dp"
-        android:layout_height="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#BB5A3E"
+        android:text="Tom"
+        android:layout_marginTop="26dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView37"
         app:layout_constraintHorizontal_bias="0.835"
         app:layout_constraintStart_toStartOf="@+id/imageView37"
-        app:layout_constraintTop_toTopOf="@+id/imageView37"
-        app:srcCompat="@drawable/jason" />
+        app:layout_constraintTop_toTopOf="@+id/imageView37" />
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I m fine"
+        android:textStyle="bold"
+        android:textColor="#BB5A3E"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView45"
+        android:layout_marginTop="12dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView46"/>
 
-    <ImageView
+    <TextView
         android:id="@+id/imageView46"
-        android:layout_width="125dp"
-        android:layout_height="21dp"
-        android:layout_marginBottom="92dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="I m fine"
+        android:textStyle="bold"
+        android:textColor="#BB5A3E"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView37"
         app:layout_constraintEnd_toEndOf="@+id/imageView37"
         app:layout_constraintHorizontal_bias="0.113"
-        app:layout_constraintStart_toStartOf="@+id/imageView37"
-        app:srcCompat="@drawable/petstring" />
+        app:layout_constraintStart_toStartOf="@+id/imageView37" />
 
-    <ImageView
+    <TextView
         android:id="@+id/imageView49"
-        android:layout_width="158dp"
-        android:layout_height="21dp"
-        android:layout_marginBottom="92dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="2022/10/21"
+        android:textStyle="bold"
+        android:textColor="#BB5A3E"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView37"
         app:layout_constraintEnd_toEndOf="@+id/imageView37"
         app:layout_constraintHorizontal_bias="0.548"
-        app:layout_constraintStart_toEndOf="@+id/imageView46"
-        app:srcCompat="@drawable/pinktime" />
+        app:layout_constraintStart_toEndOf="@+id/imageView46" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_1"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        app:layout_constraintRight_toRightOf="@+id/imageView37"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView37"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="12dp"
+        android:text="Accept"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:background="@drawable/gradient"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
