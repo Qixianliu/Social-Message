@@ -30,6 +30,8 @@ public class AddNewGroupFragment extends Fragment {
     private ImageButton imageButton89, finishBtn,imageButton97,imageButton98,imageButton99,imageButton100,imageButton101,imageButton102;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
+    FirebaseAuth firebaseAuth;
+
     Group group;
 
     public AddNewGroupFragment() {
@@ -66,7 +68,6 @@ public class AddNewGroupFragment extends Fragment {
                     GroupMemberFragment groupMemberFragment = new GroupMemberFragment();
                     addNewGroupFragment.setArguments(bundle);
                     getFragmentManager().beginTransaction().replace(R.id.container,groupMemberFragment).commit();
-
                 }
             }
         });
@@ -131,6 +132,7 @@ public class AddNewGroupFragment extends Fragment {
     private void addDataToFirebase(String groupName,String groupType){
         group.setGroupType(groupType);
         group.setGroupName(groupName);
+        firebaseAuth = FirebaseAuth.getInstance();
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override

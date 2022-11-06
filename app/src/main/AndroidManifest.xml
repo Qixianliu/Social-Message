@@ -31,7 +31,6 @@
         <!-- android:exported="false"> -->
         <!-- </activity> -->
         <activity android:name=".activites.UrgentEventActivity" />
-        <activity android:name=".activites.Terms_and_conditionsActivity" />
         <activity android:name=".activites.NonUrgentEventActivity" />
         <activity android:name=".activites.FourthActivity" />
         <activity
