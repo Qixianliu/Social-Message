@@ -62,7 +62,7 @@ public class UrgentEventActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.e("========","click");
-                test(getIntent().getStringExtra("What")+"##"+new Date().toLocaleString()+"##"+editTextTextPersonName5.getText().toString()+"##"+mList.get(position).getToken()+"##1",mList.get(position).getToken());
+                test(getIntent().getStringExtra("What")+"##"+new Date().toLocaleString()+"##"+editTextTextPersonName5.getText().toString()+"##"+mList.get(position).getToken()+"##0",mList.get(position).getToken());
 //                Message m = new Message(getIntent().getStringExtra("What")+"##"+new Date().toLocaleString()+"##"+editTextTextPersonName5.getText().toString()+"##"+mList.get(position).getToken()+"##1",mList.get(position).getEmail(),0);
 //                boolean re = m.save();
 //                if (re){
